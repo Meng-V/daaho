@@ -5,6 +5,7 @@ import Image, { type ImageProps } from 'next/image'
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 import clsx from 'clsx'
 
+import SwirlyDoodle from './SwirlyDoodle'
 import { Container } from '@/components/Container'
 import screenshotContacts from '@/images/screenshots/contacts.png'
 import screenshotInventory from '@/images/screenshots/inventory.png'
@@ -20,10 +21,9 @@ interface Feature {
 
 const features: Array<Feature> = [
   {
-    name: 'Reporting',
-    summary: 'Stay on top of things with always up-to-date reporting features.',
-    description:
-      'We talked about reporting in the section above but we needed three items here, so mentioning it one more time for posterity.',
+    name: 'Integration',
+    summary: 'Integration',
+    description: 'To create a new digital edition and repository that integrates Asian and Asian American history into mainstream narratives',
     image: screenshotProfitLoss,
     icon: function ReportingIcon() {
       let id = useId()
@@ -54,11 +54,11 @@ const features: Array<Feature> = [
     },
   },
   {
-    name: 'Inventory',
+    name: 'Documentation',
     summary:
-      'Never lose track of what’s in stock with accurate inventory tracking.',
+      'Documentation',
     description:
-      'We don’t offer this as part of our software but that statement is inarguably true. Accurate inventory tracking would help you for sure.',
+      'To research, document, and preserve the experiences of Asian Americans in Ohio.',
     image: screenshotInventory,
     icon: function InventoryIcon() {
       return (
@@ -82,11 +82,10 @@ const features: Array<Feature> = [
     },
   },
   {
-    name: 'Contacts',
+    name: 'Empowerment',
     summary:
-      'Organize all of your contacts, service providers, and invoices in one place.',
-    description:
-      'This also isn’t actually a feature, it’s just some friendly advice. We definitely recommend that you do this, you’ll feel really organized and professional.',
+      'Empowerment',
+    description:'To empower individuals and organizations within Asian communities to include their voices in the historical narrative',
     image: screenshotContacts,
     icon: function ContactsIcon() {
       return (
@@ -132,7 +131,7 @@ function Feature({
       </div>
       <h3
         className={clsx(
-          'mt-6 text-sm font-medium',
+          'text-sm font-medium',
           isActive ? 'text-red-600' : 'text-slate-600',
         )}
       >
@@ -183,7 +182,7 @@ function FeaturesDesktop() {
                   name: (
                     <Tab className="ui-not-focus-visible:outline-none">
                       <span className="absolute inset-0" />
-                      {feature.name}
+                      {/* {feature.name} */}
                     </Tab>
                   ),
                 }}
@@ -232,13 +231,15 @@ export function SecondaryFeatures() {
       className="pb-14 pt-20 sm:pb-20 sm:pt-32 lg:pb-32"
     >
       <Container>
-        <div className="mx-auto max-w-2xl md:text-center">
-          <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
-            Simplify everyday business tasks.
+        <div className="mx-auto max-w-6xl md:text-center">
+          <h2 className="font-display text-3xl text-slate-900 sm:text-4xl">
+            <span className="relative whitespace-nowrap">
+              <SwirlyDoodle className="absolute left-0 top-2/3 h-[0.8em] w-full fill-red-400/80" />
+              <span className="relative">Project Goals</span>
+            </span>
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-            Because you’d probably be a little confused if we suggested you
-            complicate your everyday business tasks instead.
+            We define Asian Americans in a broad sense and the term includes both Asian American citizens and diasporic Asians. We use this term intentionally, stressing that Asians belong to the U.S. and that Asian culture is part of the U.S. culture.
           </p>
         </div>
         <FeaturesMobile />
