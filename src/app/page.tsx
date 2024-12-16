@@ -1,12 +1,12 @@
 import { About } from '@/components/About'
-import { CallToAction } from '@/components/CallToAction'
+import { Mission } from '@/components/Mission'
 import { Faqs } from '@/components/Faqs'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero'
-import { Pricing } from '@/components/Pricing'
-import { PrimaryFeatures } from '@/components/PrimaryFeatures'
-import { SecondaryFeatures } from '@/components/SecondaryFeatures'
+import { Upcoming } from '@/components/Upcoming'
+import { Primary } from '@/components/Primary'
+import { Goals } from '@/components/Goals'
 
 export default function Home() {
   return (
@@ -14,11 +14,11 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <PrimaryFeatures />
-        <SecondaryFeatures />
-        <CallToAction />
+        <Primary />
+        <Goals />
+        <Upcoming />
         <About />
-        <Pricing />
+        <Mission />
         <Faqs />
       </main>
       <Footer />

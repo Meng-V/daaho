@@ -1,19 +1,39 @@
 'use client'
 
-import Link from 'next/link'
 import {
   Popover,
   PopoverButton,
   PopoverBackdrop,
   PopoverPanel,
 } from '@headlessui/react'
-import clsx from 'clsx'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import Logo from "@/images/logos/logo.jpg"
-import { NavLink } from '@/components/NavLink'
+
+import Link from 'next/link'
+import clsx from 'clsx'
 import Image from 'next/image'
+
+
+
+function NavLink({
+  href,
+  children,
+}: {
+  href: string
+  children: React.ReactNode
+}) {
+  return (
+    <Link
+      href={href}
+      className="inline-block rounded-lg px-2 py-1 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900"
+    >
+      {children}
+    </Link>
+  )
+}
+
 
 function MobileNavLink({
   href,
@@ -85,7 +105,7 @@ function MobileNavigation() {
 
 export function Header() {
   return (
-    <header className="py-10">
+    <header className="py-10 bg-orange-50">
       <Container>
         <nav className="relative z-50 flex justify-between">
           <div className="flex items-center md:gap-x-12">

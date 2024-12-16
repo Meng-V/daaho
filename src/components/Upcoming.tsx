@@ -95,12 +95,12 @@ function Plan({
   )
 }
 
-export function Pricing() {
+export function Upcoming() {
   return (
     <section
       id="pricing"
       aria-label="Pricing"
-      className="bg-slate-900 py-20 sm:py-32"
+      className="bg-gradient-to-r to-blue-900 from-gray-900 py-20 sm:py-32"
     >
       <Container>
         <div className="md:text-center">

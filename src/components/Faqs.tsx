@@ -60,7 +60,7 @@ export function Faqs() {
     <section
       id="faq"
       aria-labelledby="faq-title"
-      className="relative overflow-hidden bg-gradient-to-r from-pink-500 via-red-500 to-orange-500 py-20 sm:py-32"
+      className="relative overflow-hidden py-20 sm:py-32"
     >
       <Container className="relative">
         <div className="mx-auto max-w-2xl lg:mx-0">

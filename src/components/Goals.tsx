@@ -223,7 +223,7 @@ function FeaturesDesktop() {
   )
 }
 
-export function SecondaryFeatures() {
+export function Goals() {
   return (
     <section
       id="secondary-features"
