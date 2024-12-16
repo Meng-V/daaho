@@ -27,10 +27,11 @@ export function Hero() {
         The DAAHO project serves as a central hub for exploring the stories, achievements, and enduring contributions of Asian American citizens and diasporic Asians in Ohio.
       </p>
       <div className="mt-10 flex justify-center gap-x-6">
-        <Button href="/register">Contact Us</Button>
+        <Button href="/register" className='no-underline'>Contact Us</Button>
         <Button
           href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
           variant="outline"
+          className='no-underline'
         >
           <svg
             aria-hidden="true"

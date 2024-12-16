@@ -86,7 +86,7 @@ function Plan({
         href={href}
         variant={featured ? 'solid' : 'outline'}
         color="white"
-        className="mt-8"
+        className="mt-8 no-underline"
         aria-label={`Get started with the ${name} plan for ${price}`}
       >
         Get started
