@@ -23,7 +23,7 @@ export function Hero() {
         </span>{' '}
         Histories in Ohio
       </h1>
-      <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
+      <p className="mx-auto mt-6 max-w-5xl text-lg tracking-tight text-slate-700">
         The DAAHO project serves as a central hub for exploring the stories, achievements, and enduring contributions of Asian American citizens and diasporic Asians in Ohio.
       </p>
       <div className="mt-10 flex justify-center gap-x-6">
@@ -44,7 +44,7 @@ export function Hero() {
       </div>
       <div className="mt-36 lg:mt-44">
         <p className="font-display text-base text-slate-900">
-          Collaborate with
+          Sponsored by
         </p>
         <ul
           role="list"

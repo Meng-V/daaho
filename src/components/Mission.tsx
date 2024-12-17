@@ -15,8 +15,8 @@ export function Mission() {
         }}
       ></div>
       <Container className="relative">
-        <div className="mx-auto">
-          <h2 className="font-display text-3xl text-center text-white sm:text-4xl">
+        <div className="mx-auto text-center">
+          <h2 className="font-display text-3xl text-white sm:text-4xl">
             Mission Statement
           </h2>
           <p className="mt-12 text-xl tracking-tight text-white">
