@@ -1,6 +1,8 @@
-const H1Documenting = () => {
+import clsx from "clsx"
+
+const H1Documenting = ({ CustomClass }: { CustomClass?: string }) => {
     return (
-        <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-gray-700 sm:text-7xl">
+        <h1 className={clsx(`mx-auto max-w-3xl font-display text-5xl text-center font-medium tracking-tight text-gray-700 sm:text-7xl ${CustomClass}`)}>
             Documenting{' '}
             <span className="relative whitespace-nowrap text-red-700">
                 <svg
