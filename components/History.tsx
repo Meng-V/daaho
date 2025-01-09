@@ -59,11 +59,11 @@ export default function History() {
                 </p>
               </blockquote>
               <figcaption className="mt-8 flex gap-x-4">
-                <img
+                {/* <img
                   alt=""
                   src="/MosesBob.jpg"
                   className="mt-1 h-20 w-16 flex-none rounded-full bg-gray-50"
-                />
+                /> */}
                 <div className="text-base content-center">
                   <div className="font-semibold text-stone-800">
                   Bob Moses

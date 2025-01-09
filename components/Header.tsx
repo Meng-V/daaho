@@ -7,7 +7,7 @@ import {
   PopoverPanel,
 } from '@headlessui/react'
 
-import { Button } from '@/components/Button'
+import { Button } from '@/components/UI/Button'
 import { Container } from '@/components/Container'
 import Logo from "@/images/logos/logo.jpg"
 

@@ -3,7 +3,7 @@ import {
   DisclosureButton,
   DisclosurePanel,
 } from "@headlessui/react";
-import Search from "./Search";
+import Search from "../components/UI/Search";
 import { MinusIcon, PlusIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
