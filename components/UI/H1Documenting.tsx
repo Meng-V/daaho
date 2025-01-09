@@ -1,8 +1,12 @@
 import clsx from "clsx"
 
-const H1Documenting = ({ CustomClass }: { CustomClass?: string }) => {
+function H1Documenting({
+    className,
+    ...props
+}: React.ComponentPropsWithoutRef<'div'>) {
+
     return (
-        <h1 className={clsx(`mx-auto max-w-3xl font-display text-5xl text-center font-medium tracking-tight text-gray-700 sm:text-7xl ${CustomClass}`)}>
+        <h1 className={clsx(`mx-auto max-w-3xl font-display text-5xl text-center font-medium tracking-tight text-gray-700 sm:text-7xl`, className)}>
             Documenting{' '}
             <span className="relative whitespace-nowrap text-red-700">
                 <svg

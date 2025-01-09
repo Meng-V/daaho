@@ -6,7 +6,7 @@ type ContainerProps<T extends React.ElementType> = {
   children: React.ReactNode
 }
 
-export function Container<T extends React.ElementType = 'div'>({
+export function HeaderContainer<T extends React.ElementType = 'div'>({
   as,
   className,
   children,

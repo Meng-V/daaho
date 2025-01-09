@@ -8,7 +8,7 @@ import {
 } from '@headlessui/react'
 
 import { Button } from '@/components/UI/Button'
-import { Container } from '@/components/Container'
+import { HeaderContainer } from './UI/HeaderContainer'
 import Logo from "@/images/logos/logo.jpg"
 
 import Link from 'next/link'
@@ -106,7 +106,7 @@ function MobileNavigation() {
 export function Header() {
   return (
     <header className="py-10 bg-orange-50">
-      <Container>
+      <HeaderContainer>
         <nav className="relative z-50 flex justify-between">
           <div className="flex items-center md:gap-x-12">
             <Link href="#" aria-label="Home">
@@ -132,7 +132,7 @@ export function Header() {
             </div>
           </div>
         </nav>
-      </Container>
+      </HeaderContainer>
     </header>
   )
 }
