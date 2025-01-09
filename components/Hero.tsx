@@ -53,7 +53,7 @@ const Hero = () => {
                 </div>
             </div>
 
-            <div className="relative mt-36 bg-slate-50 p-12">
+            <div className="relative mt-36 p-12">
                 <p className="text-3xl text-center text-slate-900">
                     Sponsored by
                 </p>

@@ -1,79 +1,71 @@
-import Link from "next/link";
-import { FooterMenu } from "@/constant/Nav";
+import Link from 'next/link'
 
-const currentYear = new Date();
+import { Container } from '@/components/UI/Container'
+import Logo from "@/images/logos/logo.jpg"
 
-export default function Footer() {
+
+function NavLink({
+  href,
+  children,
+}: {
+  href: string
+  children: React.ReactNode
+}) {
   return (
-    <footer aria-labelledby="footer-heading" className="bg-red-800">
-      <h2 id="footer-heading" className="sr-only">
-        Footer
-      </h2>
-      <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
-        <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-          <div className="grid grid-cols-1">
-            <img
-              alt="Miami University Libraries Logo"
-              src="/Logos/MUL_white_white.png"
-              className="h-20"
-            />
-            <div className="mt-3 text-gray-300 pl-6">
-              <p className="library-address">
-                151 South Campus Avenue
-                <br />
-                Oxford, Ohio 45056
-                <br />
-                <a href="tel:+15135294141">
-                  <abbr title="Phone" aria-label="Phone number">
-                    P:
-                  </abbr>{" "}
-                  (513) 529-4141
-                </a>
-              </p>
-              <br />
-              <p>Give to the Libraries</p>
-              <p>Miami University</p>
+    <Link
+      href={href}
+      className="inline-block rounded-lg px-2 py-1 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900"
+    >
+      {children}
+    </Link>
+  )
+}
+
+export function Footer() {
+  return (
+    <footer className="bg-orange-50">
+      <Container>
+        <div className="py-16 flex flex-col items-center">
+          <img src={Logo.src} alt="DAAHO" className="h-20" />
+          <nav className="mt-10 text-sm" aria-label="quick links">
+            <div className="-my-1 flex justify-center gap-x-6">
+              <NavLink href="#project-goals">Project Goals</NavLink>
+              <NavLink href="#upcoming-events">Upcoming Events</NavLink>
+              <NavLink href="#about-us">About Us</NavLink>
             </div>
+          </nav>
+        </div>
+        <div className="flex flex-col items-center border-t border-slate-400/10 py-10 sm:flex-row sm:justify-between">
+
+          <p className="mt-6 text-sm text-slate-500 sm:mt-0">
+            Copyright &copy; {new Date().getFullYear()} Miami University Libraries. All rights
+            reserved.
+          </p>
+
+          <div className="flex gap-x-6">
+            <Link href="#" className="group" aria-label="TaxPal on X">
+              <svg
+                className="h-6 w-6 fill-slate-500 group-hover:fill-slate-700"
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+              >
+                <path d="M13.3174 10.7749L19.1457 4H17.7646L12.7039 9.88256L8.66193 4H4L10.1122 12.8955L4 20H5.38119L10.7254 13.7878L14.994 20H19.656L13.3171 10.7749H13.3174ZM11.4257 12.9738L10.8064 12.0881L5.87886 5.03974H8.00029L11.9769 10.728L12.5962 11.6137L17.7652 19.0075H15.6438L11.4257 12.9742V12.9738Z" />
+              </svg>
+            </Link>
+            <Link href="#" className="group" aria-label="TaxPal on GitHub">
+              <svg
+                className="h-6 w-6 fill-slate-500 group-hover:fill-slate-700"
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+              >
+                <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2Z" />
+              </svg>
+            </Link>
           </div>
 
-          <div className="mt-16 xl:col-span-2 xl:mt-0">
-            <div className="md:grid md:grid-cols-3 md:gap-8">
-              {FooterMenu.map((menuGroup, index) => (
-                <div
-                  className="menu-group flex flex-col gap-y-3"
-                  key={menuGroup[index] + index.toString()}
-                >
-                  {menuGroup.map((menuItem, subIndex) => (
-                    <div
-                      className="menu-item text-gray-200"
-                      key={menuItem.name + subIndex}
-                    >
-                      {"name" in menuItem ? (
-                        menuItem.href ? (
-                          <Link href={menuItem.href}>{menuItem.name}</Link>
-                        ) : (
-                          <span className="font-semibold text-gray-100">
-                            {menuItem.name}
-                          </span>
-                        )
-                      ) : (
-                        <></>
-                      )}
-                    </div>
-                  ))}
-                </div>
-              ))}
-            </div>
-          </div>
+          <p className="mt-6 text-sm text-slate-500 sm:mt-0">Templeate from <Link href={'https://tailwindui.com/templates/salient'}>https://tailwindui.com/templates/salient</Link></p>
         </div>
-        <div className="mt-8 border-t border-gray-900/10 pt-8 md:flex md:items-center md:justify-between">
-          <div className="flex space-x-6 md:order-2"></div>
-          <p className="mt-8 text-sm leading-5 text-gray-300 md:order-1 md:mt-0">
-            &copy; {currentYear.getFullYear()} Miami University Libraries. All
-            rights reserved.
-          </p>
-        </div>
-      </div>
+      </Container>
     </footer>
-  );
+  )
 }

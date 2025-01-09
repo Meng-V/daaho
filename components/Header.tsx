@@ -80,22 +80,22 @@ function MobileNavigation() {
   return (
     <Popover>
       <PopoverButton
-        className="relative z-10 flex h-8 w-8 items-center justify-center ui-not-focus-visible:outline-none"
+        className="relative z-10 flex h-8 w-8 items-center justify-center ui-not-focus-visible:outline-hidden"
         aria-label="Toggle Navigation"
       >
         {({ open }) => <MobileNavIcon open={open} />}
       </PopoverButton>
       <PopoverBackdrop
         transition
-        className="fixed inset-0 bg-slate-300/50 duration-150 data-[closed]:opacity-0 data-[enter]:ease-out data-[leave]:ease-in"
+        className="fixed inset-0 bg-slate-300/50 duration-150 data-closed:opacity-0 data-enter:ease-out data-leave:ease-in"
       />
       <PopoverPanel
         transition
-        className="absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-white p-4 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5 data-[closed]:scale-95 data-[closed]:opacity-0 data-[enter]:duration-150 data-[leave]:duration-100 data-[enter]:ease-out data-[leave]:ease-in"
+        className="absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-white p-4 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5 data-closed:scale-95 data-closed:opacity-0 data-enter:duration-150 data-leave:duration-100 data-enter:ease-out data-leave:ease-in"
       >
-        <MobileNavLink href="#features">About</MobileNavLink>
-        <MobileNavLink href="#testimonials">Events</MobileNavLink>
-        <MobileNavLink href="#pricing">News</MobileNavLink>
+        <MobileNavLink href="#project-goals">Project Goals</MobileNavLink>
+        <MobileNavLink href="#upcoming-events">Upcoming Events</MobileNavLink>
+        <MobileNavLink href="#about-us">About Us</MobileNavLink>
         <hr className="m-2 border-slate-300/40" />
         <MobileNavLink href="/login">Get Involved</MobileNavLink>
       </PopoverPanel>
@@ -110,12 +110,12 @@ export function Header() {
         <nav className="relative z-50 flex justify-between">
           <div className="flex items-center md:gap-x-12">
             <Link href="#" aria-label="Home">
-              <Image className="h-24 w-auto" src={Logo} alt={'DAAHO Logo'}/>
+              <Image className="h-24 w-auto" src={Logo} alt={'DAAHO Logo'} />
             </Link>
             <div className="hidden md:flex md:gap-x-6">
-              <NavLink href="#features">About</NavLink>
-              <NavLink href="#testimonials">Events</NavLink>
-              <NavLink href="#pricing">News</NavLink>
+              <NavLink href="#project-goals">Project Goals</NavLink>
+              <NavLink href="#upcoming-events">Upcoming Events</NavLink>
+              <NavLink href="#about-us">About Us</NavLink>
             </div>
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-8">

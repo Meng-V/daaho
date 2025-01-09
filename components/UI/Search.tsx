@@ -23,7 +23,7 @@ export default function Search() {
             required
             placeholder="Search in collections"
             onChange={(e) => setInputValue(e.target.value)}
-            className="min-w-0 flex-auto rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-red-900 sm:text-sm sm:leading-6"
+            className="min-w-0 flex-auto rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-xs ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-red-900 sm:text-sm sm:leading-6"
           />
           <RedButton buttonType="submit" buttonName="Search" />
         </div>

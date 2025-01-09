@@ -1,6 +1,9 @@
-import { Inter } from "next/font/google";
+import { type Metadata } from 'next'
+import { Inter, Lexend } from 'next/font/google'
 import { Header } from "@/components/Header";
-import Footer from "@/components/Footer";
+import { Footer } from "@/components/Footer";
+import clsx from "clsx";
+
 import "./globals.css";
 
 export const metadata = {
@@ -10,10 +13,16 @@ export const metadata = {
 };
 
 const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-  display: "swap",
-});
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter',
+})
+
+const lexend = Lexend({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-lexend',
+})
 
 export default function RootLayout({
   children,
@@ -21,11 +30,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html
+      lang="en"
+      className={clsx(
+        'scroll-smooth bg-white antialiased',
+        inter.variable,
+        lexend.variable,
+      )}
+    >
       <body>
         <Header />
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );
