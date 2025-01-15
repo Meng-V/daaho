@@ -21,7 +21,7 @@ function Event({
       className='flex flex-col rounded-3xl px-6 py-8 sm:px-8 border-2 border-amber-100 lg:py-8'
     >
       <div className='lg:h-[220px]'>
-        <p className="font-display text-xl font-bold tracking-tight text-amber-300">
+        <p className="font-display text-lg font-bold tracking-tight text-amber-300">
           {date}
         </p>
         <h3 className="mt-5 font-display text-2xl text-white">{name}</h3>

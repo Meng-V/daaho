@@ -4,7 +4,7 @@ import { MinusIcon, PlusIcon } from '@heroicons/react/24/outline'
 export default function Collapse({ content }: { content: string }) {
     return (
         <div className="w-full">
-            <div className="mx-auto max-w-7xl px-6">
+            <div className="mx-auto">
                 <div className="mx-auto max-w-4xl divide-y divide-gray-900/10">
                     <dl className="space-y-6 divide-y divide-gray-900/10">
                         <Disclosure as="div" className="pt-6">
