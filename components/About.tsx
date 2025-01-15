@@ -57,7 +57,7 @@ export function About() {
                           <div className="group relative overflow-hidden rounded-3xl bg-neutral-100">
                             <img
                               alt={person.name}
-                              src={person.imageTitle.src}
+                              src={typeof person.imageTitle === 'string' ? person.imageTitle : person.imageTitle.src}
                               width={0}
                               height={0}
                               className="h-96 w-full object-cover transition duration-500 motion-safe:group-hover:scale-105"
