@@ -111,7 +111,7 @@ export function Goals() {
               <span className="relative">Project Goals</span>
             </span>
           </h2>
-          <p className="mt-4 text-lg tracking-tight text-slate-700">
+          <p className="mt-8 text-lg text-slate-700">
             We define Asian Americans in a broad sense and the term includes both Asian American citizens and diasporic Asians. We use this term intentionally, stressing that Asians belong to the U.S. and that Asian culture is part of the U.S. culture.
           </p>
         </div>

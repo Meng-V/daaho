@@ -11,7 +11,7 @@ export const features: Array<Feature> = [
     {
         name: 'Integration',
         summary: 'Integration',
-        description: 'To create a new digital edition and repository that integrates Asian and Asian American history into mainstream narratives',
+        description: 'Create a new digital edition and repository that integrates Asian and Asian American history into mainstream narratives.',
         icon: function ReportingIcon() {
             let id = useId()
             return (
@@ -41,11 +41,11 @@ export const features: Array<Feature> = [
         },
     },
     {
-        name: 'Documentation',
+        name: 'Preservation',
         summary:
-            'Documentation',
+            'Preservation',
         description:
-            'To research, document, and preserve the experiences of Asian Americans in Ohio.',
+            'Research, document, and preserve the experiences of Asian Americans in Ohio.',
         icon: function InventoryIcon() {
             return (
                 <>
@@ -71,7 +71,8 @@ export const features: Array<Feature> = [
         name: 'Empowerment',
         summary:
             'Empowerment',
-        description: 'To empower individuals and organizations within Asian communities to include their voices in the historical narrative',
+        description:
+            'Empower individuals and organizations within Asian communities to include their voices in the historical narrative.',
         icon: function ContactsIcon() {
             return (
                 <>
@@ -91,7 +92,8 @@ export const features: Array<Feature> = [
     {
         name: 'Amplification',
         summary: 'Amplification',
-        description: 'To create a new digital edition and repository that integrates Asian and Asian American history into mainstream narratives',
+        description:
+            ' Amplify the powerful historical work of local activists -- community members, educators, journalists, public historians, librarians, archivists, and artists -- already taking place across Ohio.',
         icon: function ReportingIcon() {
             let id = useId()
             return (
@@ -125,7 +127,7 @@ export const features: Array<Feature> = [
         summary:
             'Transformation',
         description:
-            'To research, document, and preserve the experiences of Asian Americans in Ohio.',
+            'Transform and inspire a broader movement that builds a long-term awareness and sustainable models for preserving and promoting marginalized histories.',
         icon: function InventoryIcon() {
             return (
                 <>
@@ -151,7 +153,7 @@ export const features: Array<Feature> = [
         name: 'Collaboration',
         summary:
             'Collaboration',
-        description: 'To empower individuals and organizations within Asian communities to include their voices in the historical narrative',
+        description: 'Establish a model of effective collaboration between higher education institutions and diverse community organizations.',
         icon: function ContactsIcon() {
             return (
                 <>

@@ -15,8 +15,8 @@ import Image from "next/image";
 
 const Hero = () => {
     return (
-        <section id="hero">
-            <H1Documenting className="my-24" />
+        <section id="hero" className="px-4">
+            <H1Documenting className="my-16 sm:my-24" />
             {/* Hero section */}
             <div className="relative">
                 {/* Decorative image and overlay */}
