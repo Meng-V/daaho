@@ -3,6 +3,7 @@ import { Container } from './UI/Container'
 import { Border } from './UI/Border'
 import { FadeIn, FadeInStagger } from './UI/FadeIn'
 import { PROJECT_TEAM, COLLABORATORS } from "@/constant/StaticInfo"
+import PersonCard from './UI/PersonCard'
 
 
 const team = [
@@ -28,11 +29,11 @@ export function About() {
       <Container >
 
         <div className="mx-auto max-w-2xl md:text-center">
-          <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
-            About Us
+          <h2 className="font-display text-3xl text-slate-900 sm:text-4xl">
+            About the Team
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-            Our team
+
           </p>
         </div>
 
@@ -42,9 +43,9 @@ export function About() {
               <Border as={FadeIn} />
               <div className="grid grid-cols-1 gap-6 pt-12 sm:pt-16 lg:grid-cols-4 xl:gap-8">
                 <FadeIn>
-                  <h2 className="font-display text-2xl font-semibold text-neutral-950">
+                  <h3 className="font-display text-2xl font-semibold text-neutral-950">
                     {group.title}
-                  </h2>
+                  </h3>
                 </FadeIn>
                 <div className="lg:col-span-3">
                   <ul
@@ -54,27 +55,13 @@ export function About() {
                     {group.people.map((person) => (
                       <li key={person.name}>
                         <FadeIn>
-                          <div className="group relative overflow-hidden rounded-3xl bg-neutral-100">
-                            <img
-                              alt={person.name}
-                              src={typeof person.imageTitle === 'string' ? person.imageTitle : person.imageTitle.src}
-                              width={0}
-                              height={0}
-                              className="h-96 w-full object-cover transition duration-500 motion-safe:group-hover:scale-105"
+                          <div className="group relative overflow-hidden rounded-3xl">
+                            <PersonCard
+                              name={person.name}
+                              title="Software Engineer"
+                              description={`${person.description[0]}` + "/n" + `${person.description[1]}`}
+                              imageUrl={typeof person.imageTitle === 'string' ? person.imageTitle : person.imageTitle.src}
                             />
-                            <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black to-black/0 to-40% p-6">
-                              <p className="font-display text-base/6 font-semibold tracking-wide text-white">
-                                {person.name}
-                              </p>
-                              <p className="mt-2 text-sm text-white">
-                                {person.description[0] && person.description[0].length > 0 &&
-                                  <p>- {person.description[0]}</p>
-                                }
-                                {person.description[1] && person.description[1].length > 0 &&
-                                  <p>- {person.description[1]}</p>
-                                }
-                              </p>
-                            </div>
                           </div>
                         </FadeIn>
                       </li>

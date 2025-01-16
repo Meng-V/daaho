@@ -44,6 +44,7 @@ function Event({
       </ul>
       <Button
         href={href}
+        target='_blank'
         variant={'outline'}
         color="slate"
         className="mt-8 no-underline bg-amber-100 font-semibold"
@@ -74,14 +75,14 @@ export function Upcoming() {
             name="Documenting Asian American History in Ohio: Make the Invisible Visible"
             date="Spring 2025, Date TBA"
             location="Walter Havighurst Special Collections and University Archives, Miami University"
-            href="/register"
+            href="https://www.lib.miamioh.edu/"
             description='Funded by National Historical Publications & Records Commission, the DAAHO project aims to document and digitize Asian American histories in Ohio since the 19th century. The interdisciplinary research team consists of scholars, librarians and archivists at Miami University, OSU, University of California Irvine and other places, and aims to systematically collect dispersed materials and turn them into a coherent database that allows students, educators, scholars, and community members to access the rich and diverse histories and contributions of Asians in the nation’s heartland. Come to learn more about this significant project and see how you can be part of it.'
           />
           <Event
             name="A Roundtable Discussion – Making the Invisible Visible: Documenting Asian Histories in Ohio through a Collaborative Digital Edition"
             date="March 13-16, 2025"
             location="Columbus, Ohio, Greater Columbus Convention Center"
-            href="/register"
+            href="https://www.asianstudies.org/conference/"
             description="The Association of Asian Studies Conference offers a unique opportunity to engage with Asian Studies and explore the latest research and ideas in the field. DAAHO project members will present on the current status of the project and future plans in an engaging roundtable discussion. Moderated by Dr. Pranav Jani (The Ohio State University), our roundtable will discuss the project’s recent launch, focusing on current engagement and research with community organizations. Dr. Li will discuss the aims and significance of the DAAHO as well as preliminary findings. Co-PI Dr. Yong Chen will discuss research on Asian food culture as an important part of both Asian American community formation and identity expression. Co PIs Alia Levar Wegner and Dr. Ann Marie Davis will share information about relevant archival collections as well as technical aspects in developing a collaborative digital edition. Community leader and public historian James Tecco will discuss his use of oral history and storytelling with Asian & Pacific Islander communities in the Cincinnati region. Making visible what was previously invisible in American history, our project will offer new insights on Asian border crossings in Ohio while inspiring new models for preserving and promoting marginalized histories of all minority populations."
           />
         </div>
