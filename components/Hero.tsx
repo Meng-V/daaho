@@ -42,8 +42,7 @@ const Hero = () => {
 
                 <div className="relative max-w-3xl flex flex-col items-center justify-center gap-y-4 sm:gap-y-8 mx-auto text-center h-[30rem] sm:h-[45rem] ">
                     <Link
-                        href="https://digital.lib.miamioh.edu/digital/collection/fstxt/search"
-                        target="_blank"
+                        href="#upcoming-events"
                     >
                         <RedButton
                             buttonType="submit"

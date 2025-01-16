@@ -109,7 +109,7 @@ export function Header() {
       <HeaderContainer>
         <nav className="relative z-50 flex justify-between">
           <div className="flex items-center md:gap-x-12">
-            <Link href="#" aria-label="Home">
+            <Link href="/" aria-label="Home">
               <Image className="h-24 w-auto" src={Logo} alt={'DAAHO Logo'} />
             </Link>
             <div className="hidden md:flex md:gap-x-6">
@@ -122,9 +122,9 @@ export function Header() {
             <div className="hidden md:block">
               <NavLink href="/login">Get Involved</NavLink>
             </div>
-            <Button href="/register" color="red">
+            <Button href="/contact" color="red">
               <span>
-                Contact us <span className="hidden lg:inline">here</span>
+                Contact us <span className="hidden lg:inline">today</span>
               </span>
             </Button>
             <div className="-mr-1 md:hidden">

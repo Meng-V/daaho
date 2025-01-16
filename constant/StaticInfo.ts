@@ -45,8 +45,8 @@ export const CAROUSEL = [
 
 export const PROJECT_TEAM = [
     {
-        name: "Alia Wegner",
-        imageTitle: WegnerAlia,
+        name: "Hongmei Li",
+        imageTitle: LiHongmei,
         description: [
             "",
             ""
@@ -59,17 +59,18 @@ export const PROJECT_TEAM = [
             "",
             ""
         ]
-    }, {
-        name: "Hongmei Li",
-        imageTitle: LiHongmei,
+    }, 
+    {
+        name: "Ann Marie Davis",
+        imageTitle: DavisAnnMarie,
         description: [
             "",
             ""
         ]
     },
     {
-        name: "AnnMarie Davis",
-        imageTitle: DavisAnnMarie,
+        name: "Alia Wegner",
+        imageTitle: WegnerAlia,
         description: [
             "",
             ""
