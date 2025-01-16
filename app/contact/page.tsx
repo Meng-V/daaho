@@ -1,5 +1,4 @@
 import { useId } from 'react'
-import { type Metadata } from 'next'
 import Link from 'next/link'
 
 import { Border } from '@/components/UI/Border'
@@ -55,9 +54,9 @@ function ContactForm() {
   return (
     <FadeIn className="lg:order-last">
       <form>
-        <h2 className="font-display text-base font-semibold text-neutral-950">
-          Work inquiries
-        </h2>
+        <h3 className="font-display text-3xl font-semibold text-neutral-950">
+          Leave a message
+        </h3>
         <div className="isolate mt-6 -space-y-px rounded-2xl bg-white/50">
           <TextInput label="Name" name="name" autoComplete="name" />
           <TextInput
@@ -86,7 +85,7 @@ function ContactForm() {
           </div>
         </div>
         <Button type="submit" className="mt-10">
-          Let’s work together
+          Send
         </Button>
       </form>
     </FadeIn>
@@ -96,24 +95,22 @@ function ContactForm() {
 function ContactDetails() {
   return (
     <FadeIn>
-      <h2 className="font-display text-base font-semibold text-neutral-950">
+      <h3 className="font-display text-3xl font-semibold text-neutral-950">
         Our offices
-      </h2>
-      <p className="mt-6 text-base text-neutral-600">
-        Prefer doing things in person? We don’t but we have to list our
-        addresses here for legal reasons.
+      </h3>
+      <p className="mt-6 max-w-2xl text-base text-neutral-600">
+        Share your story
       </p>
 
       <Offices className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2" />
 
       <Border className="mt-16 pt-16">
-        <h2 className="font-display text-base font-semibold text-neutral-950">
+        <h3 className="font-display text-3xl font-semibold text-neutral-950">
           Email us
-        </h2>
+        </h3>
         <dl className="mt-6 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
           {[
-            ['Careers', 'careers@studioagency.com'],
-            ['Press', 'press@studioagency.com'],
+            ['Miami', 'daaho@miamioh.edu'],
           ].map(([label, email]) => (
             <div key={email}>
               <dt className="font-semibold text-neutral-950">{label}</dt>
@@ -131,23 +128,18 @@ function ContactDetails() {
       </Border>
 
       <Border className="mt-16 pt-16">
-        <h2 className="font-display text-base font-semibold text-neutral-950">
+        <h3 className="font-display text-3xl font-semibold text-neutral-950">
           Follow us
-        </h2>
+        </h3>
         <SocialMedia className="mt-6" />
       </Border>
     </FadeIn>
   )
 }
 
-export const metadata: Metadata = {
-  title: 'Contact Us',
-  description: 'Let’s work together. We can’t wait to hear from you.',
-}
-
 export default function Contact() {
   return (
-    <>
+    <section className='mb-24'>
       <PageIntro eyebrow="Contact us" title="Let’s work together">
         <p>We can’t wait to hear from you.</p>
       </PageIntro>
@@ -158,6 +150,6 @@ export default function Contact() {
           <ContactDetails />
         </div>
       </Container>
-    </>
+    </section>
   )
 }
