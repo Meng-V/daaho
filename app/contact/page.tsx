@@ -34,30 +34,15 @@ function TextInput({
   )
 }
 
-function RadioInput({
-  label,
-  ...props
-}: React.ComponentPropsWithoutRef<'input'> & { label: string }) {
-  return (
-    <label className="flex gap-x-3">
-      <input
-        type="radio"
-        {...props}
-        className="h-6 w-6 flex-none appearance-none rounded-full border border-neutral-950/20 outline-none checked:border-[0.5rem] checked:border-neutral-950 focus-visible:ring-1 focus-visible:ring-neutral-950 focus-visible:ring-offset-2"
-      />
-      <span className="text-base/6 text-neutral-950">{label}</span>
-    </label>
-  )
-}
 
 function ContactForm() {
   return (
-    <FadeIn className="lg:order-last">
+    <FadeIn className="lg:order-last p-8">
       <form>
         <h3 className="font-display text-3xl font-semibold text-neutral-950">
           Leave a message
         </h3>
-        <div className="isolate mt-6 -space-y-px rounded-2xl bg-white/50">
+        <div className="isolate mt-6 -space-y-px rounded-2xl">
           <TextInput label="Name" name="name" autoComplete="name" />
           <TextInput
             label="Email"
@@ -66,23 +51,12 @@ function ContactForm() {
             autoComplete="email"
           />
           <TextInput
-            label="Company"
-            name="company"
+            label="Organization"
+            name="organization"
             autoComplete="organization"
           />
-          <TextInput label="Phone" type="tel" name="phone" autoComplete="tel" />
           <TextInput label="Message" name="message" />
-          <div className="border border-neutral-300 px-6 py-8 first:rounded-t-2xl last:rounded-b-2xl">
-            <fieldset>
-              <legend className="text-base/6 text-neutral-500">Budget</legend>
-              <div className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2">
-                <RadioInput label="$25K – $50K" name="budget" value="25" />
-                <RadioInput label="$50K – $100K" name="budget" value="50" />
-                <RadioInput label="$100K – $150K" name="budget" value="100" />
-                <RadioInput label="More than $150K" name="budget" value="150" />
-              </div>
-            </fieldset>
-          </div>
+
         </div>
         <Button type="submit" className="mt-10">
           Send
@@ -94,46 +68,48 @@ function ContactForm() {
 
 function ContactDetails() {
   return (
-    <FadeIn>
-      <h3 className="font-display text-3xl font-semibold text-neutral-950">
-        Our offices
-      </h3>
-      <p className="mt-6 max-w-2xl text-base text-neutral-600">
-        Share your story
-      </p>
-
-      <Offices className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2" />
-
-      <Border className="mt-16 pt-16">
+    <div className='bg-gray-500/10 rounded-3xl p-8'>
+      <FadeIn>
         <h3 className="font-display text-3xl font-semibold text-neutral-950">
-          Email us
+          Our offices
         </h3>
-        <dl className="mt-6 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
-          {[
-            ['Miami', 'daaho@miamioh.edu'],
-          ].map(([label, email]) => (
-            <div key={email}>
-              <dt className="font-semibold text-neutral-950">{label}</dt>
-              <dd>
-                <Link
-                  href={`mailto:${email}`}
-                  className="text-neutral-600 hover:text-neutral-950"
-                >
-                  {email}
-                </Link>
-              </dd>
-            </div>
-          ))}
-        </dl>
-      </Border>
+        <p className="mt-6 max-w-2xl text-base text-neutral-600">
+          Share your story
+        </p>
 
-      <Border className="mt-16 pt-16">
-        <h3 className="font-display text-3xl font-semibold text-neutral-950">
-          Follow us
-        </h3>
-        <SocialMedia className="mt-6" />
-      </Border>
-    </FadeIn>
+        <Offices className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2" />
+
+        <Border className="mt-16 pt-16">
+          <h3 className="font-display text-3xl font-semibold text-neutral-950">
+            Email us
+          </h3>
+          <dl className="mt-6 grid grid-cols-1 gap-8 text-lg sm:grid-cols-2">
+            {[
+              ['Miami', 'daaho@miamioh.edu'],
+            ].map(([label, email]) => (
+              <div key={email}>
+                <dt className="font-semibold text-neutral-950">{label}</dt>
+                <dd>
+                  <Link
+                    href={`mailto:${email}`}
+                    className="text-neutral-600 hover:text-neutral-950"
+                  >
+                    {email}
+                  </Link>
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </Border>
+
+        <Border className="mt-16 pt-16">
+          <h3 className="font-display text-3xl font-semibold text-neutral-950">
+            Follow us
+          </h3>
+          <SocialMedia className="mt-6" />
+        </Border>
+      </FadeIn>
+    </div>
   )
 }
 
@@ -144,7 +120,7 @@ export default function Contact() {
         <p>We can’t wait to hear from you.</p>
       </PageIntro>
 
-      <Container className="mt-24 sm:mt-32 lg:mt-40">
+      <Container className="mt-24 sm:mt-32">
         <div className="grid grid-cols-1 gap-x-8 gap-y-24 lg:grid-cols-2">
           <ContactForm />
           <ContactDetails />

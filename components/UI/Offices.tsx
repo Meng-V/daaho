@@ -12,7 +12,7 @@ function Office({
   return (
     <address
       className={clsx(
-        'text-sm not-italic',
+        'not-italic',
         invert ? 'text-neutral-300' : 'text-neutral-600',
       )}
     >
