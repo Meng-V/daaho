@@ -59,7 +59,7 @@ function ContactForm() {
 
         </div>
         <Button type="submit" className="mt-10">
-          Send
+          {`Form under construction`}
         </Button>
       </form>
     </FadeIn>

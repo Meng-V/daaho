@@ -12,7 +12,7 @@ const team = [
     people: PROJECT_TEAM
   },
   {
-    title: 'Collaborators',
+    title: 'Partners',
     people: COLLABORATORS
   },
 ]
@@ -30,7 +30,7 @@ export function About() {
 
         <div className="mx-auto max-w-2xl md:text-center">
           <h2 className="font-display text-3xl text-slate-900 sm:text-4xl">
-            About the Team
+            About Us
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
 
@@ -58,9 +58,9 @@ export function About() {
                           <div className="group relative overflow-hidden rounded-3xl">
                             <PersonCard
                               name={person.name}
-                              title="Software Engineer"
-                              description={`${person.description[0]}` + "/n" + `${person.description[1]}`}
-                              imageUrl={typeof person.imageTitle === 'string' ? person.imageTitle : person.imageTitle.src}
+                              title={person.title}
+                              description={person.description}
+                              imageUrl={person.imageTitle.src}
                             />
                           </div>
                         </FadeIn>

@@ -8,13 +8,10 @@ import ChenYong from "../images/team/ChenYong.jpg";
 import CongHao from "../images/team/CongHao.jpg";
 import DavisAnnMarie from "../images/team/DavisAnnMarie.jpg";
 import GibsonKatie from "../images/team/GibsonKatie.jpg";
-import GreenJack from "../images/team/GreenJack.jpg";
 import HiltBill from "../images/team/HiltBill.jpg";
-import PranavJani from "../images/team/JaniPranav.jpg";
 import LiHongmei from "../images/team/LiHongmei.jpg";
-import CarverSpangle from "../images/team/SpangleCarver.jpg";
 import WegnerAlia from "../images/team/WegnerAlia.jpg";
-import WuJohnny from "../images/team/WuJohnny.jpg";
+import LOGO from "../images/logos/logo.jpg";
 
 export const CAROUSEL = [
     {
@@ -45,131 +42,66 @@ export const CAROUSEL = [
 
 export const PROJECT_TEAM = [
     {
-        name: "Hongmei Li",
+        name: "Dr. Hongmei Li",
+        title: "Project Director and Principal Investigator",
         imageTitle: LiHongmei,
-        description: [
-            "",
-            ""
-        ]
+        description: "Dr. Li is an associate professor and coordinator of Strategic Communication at Miami University of Ohio with research expertise in media, cultural and communication studies, Chinese society, U.S.-China relations, and Chinese American community and diaspora."
     },
     {
-        name: "Yong Chen",
+        name: "Dr. Yong Chen",
+        title: "Co-Principal Investigator",
         imageTitle: ChenYong,
-        description: [
-            "",
-            ""
-        ]
-    }, 
-    {
-        name: "Ann Marie Davis",
-        imageTitle: DavisAnnMarie,
-        description: [
-            "",
-            ""
-        ]
+        description: "Dr. Chen is a professor of history and Asian American Studies at the University of California, Irvine, where he serves as Associate Dean for graduate and undergraduate education in the School of Humanities."
     },
     {
-        name: "Alia Wegner",
+        name: "Dr. Ann Marie Davis",
+        title: "Co-Principal Investigator",
+        imageTitle: DavisAnnMarie,
+        description: "Dr. Davis is an associate professor and Japanese Studies librarian at The Ohio State University Libraries. She is the curator of special collections in Area Studies documenting Japanese and Japanese American diasporic history in Ohio."
+    },
+    {
+        name: "Alia Levar Wegner",
+        title: "Co-Principal Investigator",
         imageTitle: WegnerAlia,
-        description: [
-            "",
-            ""
-        ]
+        description: "Alia is the Digital Collections Librarian at the Walter Havighurst Special Collections and University Archives at Miami University where she is responsible for coordinating the digitization of special collections materials, developing digital collections, and consulting on digital humanities projects.",
     },
 ]
 
 export const COLLABORATORS = [
     {
-        name: "John (Jack) D.M Green, PhD.",
-        imageTitle: GreenJack,
-        description: [
-            "Jeffrey Horrell ‘75 and Rodney Rose Director and Chief Curator and Director, Richard and Carole Cocks Art Museum (RCCAM), Miami University",
-            "Co-chair of Museums Miami Center at Miami University, member of American Alliance of Museums, ICOM (International Council of Museums), Association of Midwest Museums, and Ohio Museums Association"
-        ]
+        name: "Dr. Sarah Chang",
+        title: "Assistant Professor of History",
+        imageTitle: ChangSarah,
+        description: "Dr. Chang is an assistant professor of history at Miami University, whose research interests include Chinese history, East Asian history, History of socialism and China’s economic reforms, and gender and women’s history.",
     },
     {
         name: "Hao Cong",
+        title: "Cincinnati Chapter President of AACO",
         imageTitle: CongHao,
-        description: [
-            "AACO Board member and president of Cincinnati Chapter",
-            "Asian American coalition of Ohio"
-        ]
+        description: "Hao is the Cincinnati chapter president of the Asian American Coalition Ohio. She has been recognized by the Hamilton County Board of Commissioners for her outstanding contributions to the API community.",
     },
     {
         name: "Katie Gibson",
+        title: "Humanities Librarian",
         imageTitle: GibsonKatie,
-        description: [
-            "Humanities Librarian, Miami University Libraries",
-        ]
+        description: "Katie is the Miami University Libraries liaison to the Asian and Asian American Studies program and is the Libraries’ liaison for accessibility.",
     },
     {
-        name: "Hou-mei Sung, Ph.D.",
-        imageTitle: "",
-        description: [
-            "Curator of East Asian Art",
-            "Cincinnati Art Museum"
-        ]
-    },
-    {
-        name: "Mr. Johnny K. Wu, MBA",
-        imageTitle: WuJohnny,
-        description: [
-            "",
-            ""
-        ]
-    },
-    {
-        name: "Dr. Sarah Chang",
-        imageTitle: ChangSarah,
-        description: [
-            "Assistant professor of History at Miami University, OH",
-        ]
-    },
-    {
-        name: "Maria Lee, MSLIS",
-        imageTitle: "",
-        description: [
-            "Librarian, Columbus Metropolitan Library - Local History & Genealogy",
-        ]
-    },
-    {
-        name: "Dr. Jani",
-        imageTitle: PranavJani,
-        description: [
-            "Associate Professor of English; Program Director, Asian American Studies (until May); Faculty Advisor, Students for Justice in Palestine and others.  President, AAUP-Ohio State (until April).",
-
-        ]
-    },
-    {
-        name: "Mr. Bill Hilt",
+        name: "William (Bill) Hilt",
+        title: "President of the Ohio Council for the Social Studies",
         imageTitle: HiltBill,
-        description: [
-            "Perrysburg EVS, the Ohio Council for the Social Studies (President through '24 then Immediate Past President,) World Affairs Council of Northwest Ohio (President/CEO)",
-
-        ]
+        description: "Bill has been teaching social studies in Perrysburg, Ohio for thirty years. He is currently the President of the Ohio Council for the Social Studies, and is the founder, President and CEO of the World Affairs Council of NW Ohio.",
     },
     {
-        name: "Mr. Jaewon Back",
-        imageTitle: "",
-        description: [
-            "Ph.D. student, English Department, Miami University",
-            "M.A., Hankuk University of Foreign Studies"
-        ]
+        name: "Dr. Hou-mei Sung",
+        title: "Curator of East Asian Art, Prints, and Drawings",
+        imageTitle: LOGO,
+        description: "Dr. Sung is the Curator of East Asian Art, Prints, and Drawings at the Cincinnati Art Museum. She has made tremendous contributions to Asian art in Cincinnati and has worked on important collections and exhibitions emphasizing the importance of art education in breaking down cultural and language barriers."
     },
     {
         name: "James Tecco",
-        imageTitle: "",
-        description: [
-            "APIA History Cincinnati - Public Historian and co-founder",
-
-        ]
-    },
-    {
-        name: "Carver Spangle",
-        imageTitle: CarverSpangle,
-        description: [
-            "DAAHO Research Assistant, HASS Scholars, History Honors Program, LEADS Institute Peer Mentor",
-
-        ]
+        title: "C-Founder of APIA History Cincinnati",
+        imageTitle: LOGO,
+        description: "James is a community leader who is passionate about promoting DEI and is the curator and creator of the “52 Voices” project, based in Cincinnati, which is dedicated to archiving, documenting, and collecting the history and contemporary experiences of AAPI communities in the Greater Cincinnati region through oral history and storytelling.",
     },
 ]

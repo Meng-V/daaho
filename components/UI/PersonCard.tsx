@@ -31,7 +31,7 @@ export default function PersonCard({ name, title, description, imageUrl }: Perso
             <div className="absolute inset-0 bg-opacity-50 z-10" />
 
             {/* Content Container */}
-            <div className={`relative z-20 h-full flex flex-col justify-end p-4 transition-all duration-300 ease-in-out ${isHovered ? 'bg-black/70' : 'bg-transparent'}`}>
+            <div className={`relative z-20 h-full flex flex-col justify-end p-4 transition-all duration-300 ease-in-out ${isHovered ? 'bg-black/75' : 'bg-transparent'}`}>
                 {/* Description (hidden by default) */}
                 <div
                     className={`text-white transition-all duration-300 ease-in-out ${isHovered ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-full'
@@ -46,7 +46,7 @@ export default function PersonCard({ name, title, description, imageUrl }: Perso
                         }`}
                 >
                     <h4 className="text-white text-2xl font-bold">{name}</h4>
-                    <p className={`text-white text-lg ${isHovered ? 'translate-y-[180px]' : ''}`}>Your title here</p>
+                    <p className={`text-white text-lg ${isHovered ? 'translate-y-[150px]' : ''}`}>{title}</p>
                 </div>
             </div>
         </div>
