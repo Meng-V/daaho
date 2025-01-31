@@ -1,5 +1,5 @@
-import { Button } from '@/components/UI/Button'
-import { Container } from '@/components/UI/Container'
+import { Button } from '@/components/customUI/Button'
+import { Container } from '@/components/customUI/Container'
 
 export function Mission() {
   return (

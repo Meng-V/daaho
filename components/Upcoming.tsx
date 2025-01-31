@@ -1,6 +1,6 @@
-import { Button } from '@/components/UI/Button'
-import { Container } from '@/components/UI/Container'
-import Collapse from './UI/Collapse'
+import { Button } from '@/components/customUI/Button'
+import { Container } from '@/components/customUI/Container'
+import Collapse from './customUI/Collapse'
 
 
 function Event({

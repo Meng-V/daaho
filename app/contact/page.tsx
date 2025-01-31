@@ -1,13 +1,13 @@
 import { useId } from 'react'
 import Link from 'next/link'
 
-import { Border } from '@/components/UI/Border'
-import { Button } from '@/components/UI/Button'
-import { Container } from '@/components/UI/Container'
-import { FadeIn } from '@/components/UI/FadeIn'
-import { Offices } from '@/components/UI/Offices'
-import { PageIntro } from '@/components/UI/PageIntro'
-import { SocialMedia } from '@/components/UI/SocialMedia'
+import { Border } from '@/components/customUI/Border'
+import { Button } from '@/components/customUI/Button'
+import { Container } from '@/components/customUI/Container'
+import { FadeIn } from '@/components/customUI/FadeIn'
+import { Offices } from '@/components/customUI/Offices'
+import { PageIntro } from '@/components/customUI/PageIntro'
+import { SocialMedia } from '@/components/customUI/SocialMedia'
 
 function TextInput({
   label,

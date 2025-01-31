@@ -7,8 +7,8 @@ import {
   PopoverPanel,
 } from '@headlessui/react'
 
-import { Button } from '@/components/UI/Button'
-import { HeaderContainer } from './UI/HeaderContainer'
+import { Button } from '@/components/customUI/Button'
+import { HeaderContainer } from './customUI/HeaderContainer'
 import Logo from "@/images/logos/logo_n.png"
 import { NAV_LINKS } from '@/constant/StaticInfo'
 

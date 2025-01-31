@@ -1,64 +1,57 @@
-import Link from 'next/link'
-import clsx from 'clsx'
+import * as React from "react"
+import { Slot } from "@radix-ui/react-slot"
+import { cva, type VariantProps } from "class-variance-authority"
 
-const baseStyles = {
-  solid:
-    'group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-hidden focus-visible:outline-2 focus-visible:outline-offset-2',
-  outline:
-    'group inline-flex ring-1 items-center justify-center rounded-full py-2 px-4 text-sm focus:outline-hidden',
-}
+import { cn } from "@/lib/utils"
 
-const variantStyles = {
-  solid: {
-    slate:
-      'bg-slate-900 text-white hover:bg-slate-700 hover:text-slate-100 active:bg-slate-800 active:text-slate-300 focus-visible:outline-slate-900',
-    red: 'bg-red-600 text-white hover:text-slate-100 hover:bg-red-500 active:bg-red-800 active:text-red-100 focus-visible:outline-red-600',
-    white:
-      'bg-white text-slate-900 hover:bg-red-50 active:bg-red-200 active:text-slate-600 focus-visible:outline-white',
-  },
-  outline: {
-    slate:
-      'ring-slate-200 text-slate-700 hover:text-slate-900 hover:ring-slate-300 active:bg-slate-100 active:text-slate-600 focus-visible:outline-red-600 focus-visible:ring-slate-300',
-    red: "ring-gray-700 text-gray-800 hover:text-red-700 hover:ring-red-600 active:bg-red-100 active:text-red-700 focus-visible:outline-red-500 focus-visible:ring-red-600",
-    white:
-      'ring-slate-700 text-white hover:ring-slate-500 active:ring-slate-700 active:text-slate-400 focus-visible:outline-white',
-  },
-}
-
-type ButtonProps = (
-  | {
-    variant?: 'solid'
-    color?: keyof typeof variantStyles.solid
+const buttonVariants = cva(
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
+  {
+    variants: {
+      variant: {
+        default:
+          "bg-primary text-primary-foreground shadow hover:bg-primary/90",
+        destructive:
+          "bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90",
+        outline:
+          "border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground",
+        secondary:
+          "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
+        ghost: "hover:bg-accent hover:text-accent-foreground",
+        link: "text-primary underline-offset-4 hover:underline",
+      },
+      size: {
+        default: "h-9 px-4 py-2",
+        sm: "h-8 rounded-md px-3 text-xs",
+        lg: "h-10 rounded-md px-8",
+        icon: "h-9 w-9",
+      },
+    },
+    defaultVariants: {
+      variant: "default",
+      size: "default",
+    },
   }
-  | {
-    variant: 'outline'
-    color?: keyof typeof variantStyles.outline
-  }
-) &
-  (
-    | Omit<React.ComponentPropsWithoutRef<typeof Link>, 'color'>
-    | (Omit<React.ComponentPropsWithoutRef<'button'>, 'color'> & {
-      href?: undefined
-    })
-  )
+)
 
-export function Button({ className, ...props }: ButtonProps) {
-  props.variant ??= 'solid'
-  props.color ??= 'slate'
-
-  className = clsx(
-    baseStyles[props.variant],
-    props.variant === 'outline'
-      ? variantStyles.outline[props.color]
-      : props.variant === 'solid'
-        ? variantStyles.solid[props.color]
-        : undefined,
-    className,
-  )
-
-  return typeof props.href === 'undefined' ? (
-    <button className={className} {...props} />
-  ) : (
-    <Link className={className} {...props} />
-  )
+export interface ButtonProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement>,
+    VariantProps<typeof buttonVariants> {
+  asChild?: boolean
 }
+
+const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
+  ({ className, variant, size, asChild = false, ...props }, ref) => {
+    const Comp = asChild ? Slot : "button"
+    return (
+      <Comp
+        className={cn(buttonVariants({ variant, size, className }))}
+        ref={ref}
+        {...props}
+      />
+    )
+  }
+)
+Button.displayName = "Button"
+
+export { Button, buttonVariants }

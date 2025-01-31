@@ -9,8 +9,8 @@ import { CAROUSEL } from '@/constant/StaticInfo'
 
 import logoMUL from '@/images/logos/mul.png'
 import logoNHPRC from '@/images/logos/nhprc.png'
-import H1Documenting from './UI/H1Documenting'
-import RedButton from './UI/RedButton'
+import H1Documenting from './customUI/H1Documenting'
+import RedButton from './customUI/RedButton'
 import Image from "next/image";
 
 const Hero = () => {

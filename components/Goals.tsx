@@ -5,8 +5,8 @@ import Image, { type ImageProps } from 'next/image'
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 import clsx from 'clsx'
 
-import SwirlyDoodle from './UI/SwirlyDoodle'
-import { Container } from '@/components/UI/Container'
+import SwirlyDoodle from './customUI/SwirlyDoodle'
+import { Container } from '@/components/customUI/Container'
 
 import { features } from './GoalDetails'
 

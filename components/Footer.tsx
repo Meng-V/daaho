@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import { Container } from '@/components/UI/Container'
+import { Container } from '@/components/customUI/Container'
 import Logo from "@/images/logos/logo_n.png"
 import { NAV_LINKS } from '@/constant/StaticInfo'
 
