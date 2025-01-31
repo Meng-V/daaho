@@ -73,9 +73,6 @@ function ContactDetails() {
         <h3 className="font-display text-3xl font-semibold text-neutral-950">
           Contact Information
         </h3>
-        <p className="mt-6 max-w-2xl text-base text-neutral-600">
-          Submit a collection
-        </p>
 
         <Offices className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2" />
 
@@ -92,7 +89,7 @@ function ContactDetails() {
                 <dd>
                   <Link
                     href={`mailto:${email}`}
-                    className="text-red-600 hover:text-red-900"
+                    className="text-red-600 hover:text-red-900 underline"
                   >
                     {email}
                   </Link>

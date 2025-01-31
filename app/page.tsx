@@ -1,7 +1,7 @@
 import { Mission } from "@/components/Mission";
 import Hero from "@/components/Hero";
 import { Goals } from "@/components/Goals";
-import { Upcoming } from "@/components/Upcoming";
+import { Upcoming } from "@/components/Events";
 import { About } from "@/components/About";
 
 export default function Home() {

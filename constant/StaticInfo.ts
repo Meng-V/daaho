@@ -12,6 +12,7 @@ import HiltBill from "../images/team/HiltBill.jpg";
 import LiHongmei from "../images/team/LiHongmei.jpg";
 import WegnerAlia from "../images/team/WegnerAlia.jpg";
 import LOGO from "../images/logos/logo_n.png";
+import AvatarLogo from "../images/avatars/modified.svg";
 
 export const NAV_LINKS = [
     {
@@ -114,13 +115,13 @@ export const COLLABORATORS = [
     {
         name: "Dr. Hou-mei Sung",
         title: "Curator of East Asian Art, Prints, and Drawings",
-        imageTitle: LOGO,
+        imageTitle: AvatarLogo,
         description: "Dr. Sung is the Curator of East Asian Art, Prints, and Drawings at the Cincinnati Art Museum. She has made tremendous contributions to Asian art in Cincinnati and has worked on important collections and exhibitions emphasizing the importance of art education in breaking down cultural and language barriers."
     },
     {
         name: "James Tecco",
         title: "C-Founder of APIA History Cincinnati",
-        imageTitle: LOGO,
+        imageTitle: AvatarLogo,
         description: "James is a community leader who is passionate about promoting DEI and is the curator and creator of the “52 Voices” project, based in Cincinnati, which is dedicated to archiving, documenting, and collecting the history and contemporary experiences of AAPI communities in the Greater Cincinnati region through oral history and storytelling.",
     },
 ]
