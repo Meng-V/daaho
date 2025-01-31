@@ -64,7 +64,7 @@ export function Upcoming() {
       <Container>
         <div className="md:text-center">
           <h2 className="text-white">
-            <span className="">Upcoming Events</span>
+            <span className="">Events</span>
           </h2>
           <p className="mt-8 text-lg text-slate-300">
             Our event page is your central resource for past and upcoming events dedicated to exploring and preserving the stories of Asian Americans in Ohio. This page serves as a platform to engage communities, scholars, and enthusiasts in meaningful discussions, conferences, and workshops centered on this vital project. Here, you’ll find information about events designed to share knowledge, foster connections, and inspire action, all while deepening awareness of Asian American contributions and histories. Stay informed and involved as we work together to illuminate the rich and diverse heritage of Asian American communities in Ohio.

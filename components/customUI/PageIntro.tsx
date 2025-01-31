@@ -1,7 +1,7 @@
 import clsx from 'clsx'
 
-import { Container } from '@/components/UI/Container'
-import { FadeIn } from '@/components/UI/FadeIn'
+import { Container } from '@/components/customUI/Container'
+import { FadeIn } from '@/components/customUI/FadeIn'
 
 export function PageIntro({
   eyebrow,

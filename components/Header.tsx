@@ -125,10 +125,10 @@ export function Header() {
           <div className="flex items-center gap-x-5 md:gap-x-8">
             <div className="hidden md:block">
             </div>
-            <Button variant="outline" color="red" href="/submit">Submit<span className='hidden lg:inline'> a Collection</span></Button>
+            <Button variant="outline" color="red" href="/submit">Submit<span className='hidden lg:inline'>&nbsp;a collection</span></Button>
             <Button href="/contact" color="red">
               <span>
-                Contact<span className="hidden lg:inline"> us today</span>
+                Contact<span className="hidden lg:inline"> us</span>
               </span>
             </Button>
             <div className="-mr-1 md:hidden">

@@ -1,9 +1,9 @@
 import Image from 'next/image'
-import { Container } from './ui/Container'
-import { Border } from './ui/Border'
-import { FadeIn, FadeInStagger } from './ui/FadeIn'
+import { Container } from '@/components/customUI/Container'
+import { Border } from '@/components/customUI/Border'
+import { FadeIn, FadeInStagger } from '@/components/customUI/FadeIn'
 import { PROJECT_TEAM, COLLABORATORS } from "@/constant/StaticInfo"
-import PersonCard from './ui/PersonCard'
+import PersonCard from '@/components/customUI/PersonCard'
 
 
 const team = [

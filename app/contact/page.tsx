@@ -71,10 +71,10 @@ function ContactDetails() {
     <div className='bg-gray-500/10 rounded-3xl p-8'>
       <FadeIn>
         <h3 className="font-display text-3xl font-semibold text-neutral-950">
-          Our offices
+          Contact Information
         </h3>
         <p className="mt-6 max-w-2xl text-base text-neutral-600">
-          Share your story
+          Submit a collection
         </p>
 
         <Offices className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2" />
@@ -85,14 +85,14 @@ function ContactDetails() {
           </h3>
           <dl className="mt-6 grid grid-cols-1 gap-8 text-lg sm:grid-cols-2">
             {[
-              ['Miami', 'daaho@miamioh.edu'],
+              ['DAAHO Project Team', 'daaho@miamioh.edu'],
             ].map(([label, email]) => (
               <div key={email}>
                 <dt className="font-semibold text-neutral-950">{label}</dt>
                 <dd>
                   <Link
                     href={`mailto:${email}`}
-                    className="text-neutral-600 hover:text-neutral-950"
+                    className="text-red-600 hover:text-red-900"
                   >
                     {email}
                   </Link>
@@ -116,8 +116,9 @@ function ContactDetails() {
 export default function Contact() {
   return (
     <section className='mb-24'>
-      <PageIntro eyebrow="Contact us" title="Let’s work together">
-        <p>We can’t wait to hear from you.</p>
+      <PageIntro eyebrow="Get involved" title="Let’s work together">
+        <p>Discover ways to support this project through volunteering, attending events, sharing your own stories or artifacts, or collaborating on research initiatives. Your involvement is key to ensuring these important histories are documented, celebrated, and passed down to future generations. Join us in making an impact!
+        </p>
       </PageIntro>
 
       <Container className="mt-24 sm:mt-32">
