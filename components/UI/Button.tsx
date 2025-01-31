@@ -19,6 +19,7 @@ const variantStyles = {
   outline: {
     slate:
       'ring-slate-200 text-slate-700 hover:text-slate-900 hover:ring-slate-300 active:bg-slate-100 active:text-slate-600 focus-visible:outline-red-600 focus-visible:ring-slate-300',
+    red: "ring-gray-700 text-gray-800 hover:text-red-700 hover:ring-red-600 active:bg-red-100 active:text-red-700 focus-visible:outline-red-500 focus-visible:ring-red-600",
     white:
       'ring-slate-700 text-white hover:ring-slate-500 active:ring-slate-700 active:text-slate-400 focus-visible:outline-white',
   },
@@ -26,19 +27,19 @@ const variantStyles = {
 
 type ButtonProps = (
   | {
-      variant?: 'solid'
-      color?: keyof typeof variantStyles.solid
-    }
+    variant?: 'solid'
+    color?: keyof typeof variantStyles.solid
+  }
   | {
-      variant: 'outline'
-      color?: keyof typeof variantStyles.outline
-    }
+    variant: 'outline'
+    color?: keyof typeof variantStyles.outline
+  }
 ) &
   (
     | Omit<React.ComponentPropsWithoutRef<typeof Link>, 'color'>
     | (Omit<React.ComponentPropsWithoutRef<'button'>, 'color'> & {
-        href?: undefined
-      })
+      href?: undefined
+    })
   )
 
 export function Button({ className, ...props }: ButtonProps) {

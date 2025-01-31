@@ -41,14 +41,14 @@ const Hero = () => {
                 </div>
 
                 <div className="relative max-w-3xl flex flex-col items-center justify-center gap-y-4 sm:gap-y-8 mx-auto text-center h-[30rem] sm:h-[45rem] ">
-                    <Link
+                    {/* <Link
                         href="#upcoming-events"
                     >
                         <RedButton
                             buttonType="submit"
                             buttonName="Upcoming Events"
                         />
-                    </Link>
+                    </Link> */}
                 </div>
             </div>
 

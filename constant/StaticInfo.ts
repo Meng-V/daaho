@@ -11,7 +11,26 @@ import GibsonKatie from "../images/team/GibsonKatie.jpg";
 import HiltBill from "../images/team/HiltBill.jpg";
 import LiHongmei from "../images/team/LiHongmei.jpg";
 import WegnerAlia from "../images/team/WegnerAlia.jpg";
-import LOGO from "../images/logos/logo.jpg";
+import LOGO from "../images/logos/logo_n.png";
+
+export const NAV_LINKS = [
+    {
+        name: "Mission",
+        href: "/#mission-statement",
+    },
+    {
+        name: "Project Goals",
+        href: "/#project-goals",
+    },
+    {
+        name: "Events",
+        href: "/#upcoming-events",
+    },
+    {
+        name: "About Us",
+        href: "/#about-us",
+    },
+]
 
 export const CAROUSEL = [
     {
@@ -45,7 +64,7 @@ export const PROJECT_TEAM = [
         name: "Dr. Hongmei Li",
         title: "Project Director and Principal Investigator",
         imageTitle: LiHongmei,
-        description: "Dr. Li is an associate professor and coordinator of Strategic Communication at Miami University of Ohio with research expertise in media, cultural and communication studies, Chinese society, U.S.-China relations, and Chinese American community and diaspora."
+        description: "Dr. Li is an associate professor and area coordinator of Strategic Communication at Miami University of Ohio with research expertise in media, cultural and communication studies, Chinese society, U.S.-China relations, and Chinese American community and diaspora."
     },
     {
         name: "Dr. Yong Chen",
@@ -57,7 +76,7 @@ export const PROJECT_TEAM = [
         name: "Dr. Ann Marie Davis",
         title: "Co-Principal Investigator",
         imageTitle: DavisAnnMarie,
-        description: "Dr. Davis is an associate professor and Japanese Studies librarian at The Ohio State University Libraries. She is the curator of special collections in Area Studies documenting Japanese and Japanese American diasporic history in Ohio."
+        description: "Dr. Davis is an associate professor and Japanese Studies librarian at The Ohio State University Libraries. As a curator of general and special collections in Area Studies, she is passionate about documenting Japanese and Japanese American diasporic history in Ohio and beyond."
     },
     {
         name: "Alia Levar Wegner",

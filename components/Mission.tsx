@@ -5,7 +5,7 @@ export function Mission() {
   return (
     <section
       id="mission-statement"
-      className="bg-radial-[at_25%_25%] from-gray-900 to-blue-900 py-24"
+      className="bg-radial-[at_25%_18%] from-gray-900 to-sky-900 py-24"
     >
       <Container>
         <div className="md:text-center">

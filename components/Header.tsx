@@ -9,7 +9,8 @@ import {
 
 import { Button } from '@/components/UI/Button'
 import { HeaderContainer } from './UI/HeaderContainer'
-import Logo from "@/images/logos/logo.jpg"
+import Logo from "@/images/logos/logo_n.png"
+import { NAV_LINKS } from '@/constant/StaticInfo'
 
 import Link from 'next/link'
 import clsx from 'clsx'
@@ -93,11 +94,12 @@ function MobileNavigation() {
         transition
         className="absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-white p-4 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5 data-closed:scale-95 data-closed:opacity-0 data-enter:duration-150 data-leave:duration-100 data-enter:ease-out data-leave:ease-in"
       >
-        <MobileNavLink href="#project-goals">Project Goals</MobileNavLink>
-        <MobileNavLink href="#upcoming-events">Upcoming Events</MobileNavLink>
-        <MobileNavLink href="#about-us">About Us</MobileNavLink>
+        {NAV_LINKS.map((link) => (
+          <MobileNavLink key={link.href} href={link.href}>
+            {link.name}
+          </MobileNavLink>
+        ))}
         <hr className="m-2 border-slate-300/40" />
-        {/* <MobileNavLink href="/login">Get Involved</MobileNavLink> */}
       </PopoverPanel>
     </Popover>
   )
@@ -113,18 +115,20 @@ export function Header() {
               <Image className="h-24 w-auto" src={Logo} alt={'DAAHO Logo'} />
             </Link>
             <div className="hidden md:flex md:gap-x-6">
-              <NavLink href="#project-goals">Project Goals</NavLink>
-              <NavLink href="#upcoming-events">Upcoming Events</NavLink>
-              <NavLink href="#about-us">About Us</NavLink>
+              {NAV_LINKS.map((link) => (
+                <NavLink key={link.href} href={link.href}>
+                  {link.name}
+                </NavLink>
+              ))}
             </div>
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-8">
             <div className="hidden md:block">
-              {/* <NavLink href="/login">Get Involved</NavLink> */}
             </div>
+            <Button variant="outline" color="red" href="/submit">Submit<span className='hidden lg:inline'> a Collection</span></Button>
             <Button href="/contact" color="red">
               <span>
-                Contact us <span className="hidden lg:inline">today</span>
+                Contact<span className="hidden lg:inline"> us today</span>
               </span>
             </Button>
             <div className="-mr-1 md:hidden">

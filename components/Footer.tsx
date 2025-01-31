@@ -1,7 +1,8 @@
 import Link from 'next/link'
 
 import { Container } from '@/components/UI/Container'
-import Logo from "@/images/logos/logo.jpg"
+import Logo from "@/images/logos/logo_n.png"
+import { NAV_LINKS } from '@/constant/StaticInfo'
 
 
 function NavLink({
@@ -26,12 +27,17 @@ export function Footer() {
     <footer className="bg-orange-50">
       <Container>
         <div className="py-16 flex flex-col items-center">
-          <img src={Logo.src} alt="DAAHO" className="h-20" />
+          <Link href="/" aria-label="Home">
+            <img src={Logo.src} alt="DAAHO" className="h-20" />
+          </Link>
           <nav className="mt-10 text-sm" aria-label="quick links">
             <div className="-my-1 flex justify-center gap-x-6">
-              <NavLink href="#project-goals">Project Goals</NavLink>
-              <NavLink href="#upcoming-events">Upcoming Events</NavLink>
-              <NavLink href="#about-us">About Us</NavLink>
+              <NavLink href="/" key="home">Home</NavLink>
+              {NAV_LINKS.map((link) => (
+                <NavLink key={link.href} href={link.href}>
+                  {link.name}
+                </NavLink>
+              ))}
             </div>
           </nav>
         </div>

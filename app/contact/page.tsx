@@ -58,7 +58,7 @@ function ContactForm() {
           <TextInput label="Message" name="message" />
 
         </div>
-        <Button type="submit" className="mt-10">
+        <Button type="submit" className="mt-10 bg-gray-300 cursor-not-allowed opacity-50" disabled>
           {`Form under construction`}
         </Button>
       </form>
