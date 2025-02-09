@@ -19,5 +19,7 @@ export interface EventsProps {
   date: string
   location: string
   href: string
-  description: string
+  description?: string
+  imageURL?: string
+  imageAlt?: string
 }

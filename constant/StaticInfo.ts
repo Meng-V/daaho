@@ -67,5 +67,14 @@ export const UPCOMING_EVENTS = [
 ]
 
 export const PAST_EVENTS = [
+    {
+        name: "DAAHO Project Launch",
+        date: "July 20, 2024",
+        location: "Mason City Hall in Mason, Ohio",
+        href: "/",
+        description: "Participants at the launch of the Asian American History Project: Making the Invisible Visible, held on July 20 at Mason City Hall, Mason, Ohio. The project is funded by the National Historical Publications & Records Commission (NHPRC). This initiative highlights and preserves Asian American histories in Ohio.",
+        imageURL: "",
+        imageAlt: "A group of around 30 members stands together in a conference room, smiling for a photo during the launch of the \"Asian American History Project: Making the Invisible Visible.\" Behind them, a presentation slide displays the project's title, the National Archives logo, and event details: \"Project Launch, July 20, Mason City Hall, Mason, Ohio, Funded by NHPRC.\"",
+    },
 
 ]

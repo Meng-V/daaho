@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { Container } from '@/components/customUI/Container'
 import { Border } from '@/components/customUI/Border'
 import { FadeIn, FadeInStagger } from '@/components/customUI/FadeIn'
-import { PROJECT_TEAM, COLLABORATORS } from "@/constant/PERSONNEL"
+import { PROJECT_TEAM, COLLABORATORS } from "@/constant/Personnel"
 import PersonCard from '@/components/customUI/PersonCard'
 import AboutLogo from './AboutLogo'
 

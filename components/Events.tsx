@@ -7,23 +7,35 @@ import { FadeIn, FadeInStagger } from './customUI/FadeIn'
 import { SectionIntro } from './customUI/SectionIntro'
 import { EventsProps } from '@/types/index'
 import { UPCOMING_EVENTS } from '@/constant/StaticInfo'
+import { PAST_EVENTS } from '@/constant/StaticInfo'
+
+const team = [
+  {
+    title: 'Upcoming Events',
+    people: UPCOMING_EVENTS
+  },
+  {
+    title: 'Past Events',
+    people: PAST_EVENTS
+  },
+]
 
 function PastEvents({
-  inputEvents
+  pastEvents
 }: {
-  inputEvents: EventsProps
+  pastEvents: EventsProps
 }) {
   return (
     <div
       className='flex flex-col rounded-3xl px-6 py-8 sm:px-8 border-2 border-amber-100 lg:py-8'
     >
-      <div className='lg:h-[220px]'>
+      <div className='lg:h-[150px]'>
         <p className="font-display text-lg font-bold tracking-tight text-amber-300">
-          {inputEvents.date}
+          {pastEvents.date}
         </p>
-        <h3 className="mt-5 font-display text-2xl text-white">{inputEvents.name}</h3>
+        <h3 className="mt-5 font-display text-2xl text-white">{pastEvents.name}</h3>
         <p className='mt-4 text-base text-slate-400'>
-          {inputEvents.location}
+          {pastEvents.location}
         </p>
       </div>
 
@@ -33,20 +45,20 @@ function PastEvents({
         'order-last flex flex-col gap-y-3'
       >
 
-        {inputEvents.description && (
+        {pastEvents.description && (
           <li className="flex">
-            <Collapse content={inputEvents.description} />
+            <Collapse content={pastEvents.description} />
           </li>
         )}
       </ul>
       <Button
-        href={inputEvents.href}
+        href={pastEvents.href}
         target='_blank'
         variant={'outline'}
         color="slate"
         className="mt-8 no-underline bg-amber-100 font-semibold"
       >
-        Event Link
+        Read More
       </Button>
     </div>
   )
@@ -124,6 +136,11 @@ export default async function Events() {
 
         <>
           <h3>Past Events</h3>
+          <div className="mt-16 grid max-w-2xl grid-cols-1 gap-y-10 gap-x-8 sm:mx-auto lg:max-w-none lg:grid-cols-2 xl:mx-20 xl:gap-x-16">
+            {PAST_EVENTS.map((event, index) => (
+              <PastEvents key={index} pastEvents={event} />
+            ))}
+          </div>
         </>
       </Container>
     </section>
