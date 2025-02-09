@@ -1,22 +1,20 @@
 import { Button } from '@/components/customUI/Button'
 import { Container } from '@/components/customUI/Container'
 import Collapse from './customUI/Collapse'
-import Link from 'next/link'
-import Image from 'next/image'
 import { FadeIn, FadeInStagger } from './customUI/FadeIn'
-import { SectionIntro } from './customUI/SectionIntro'
 import { EventsProps } from '@/types/index'
 import { UPCOMING_EVENTS } from '@/constant/StaticInfo'
 import { PAST_EVENTS } from '@/constant/StaticInfo'
+import { Border } from './customUI/Border'
 
-const team = [
+const EVENT_LIST = [
   {
     title: 'Upcoming Events',
-    people: UPCOMING_EVENTS
+    events: UPCOMING_EVENTS
   },
   {
     title: 'Past Events',
-    people: PAST_EVENTS
+    events: PAST_EVENTS
   },
 ]
 
@@ -27,10 +25,10 @@ function PastEvents({
 }) {
   return (
     <div
-      className='flex flex-col rounded-3xl px-6 py-8 sm:px-8 border-2 border-amber-100 lg:py-8'
+      className='flex flex-col rounded-3xl px-6 py-8 sm:px-8 border-2 border-teal-500 lg:py-8'
     >
-      <div className='lg:h-[150px]'>
-        <p className="font-display text-lg font-bold tracking-tight text-amber-300">
+      <div className=''>
+        <p className="font-display text-lg font-bold tracking-tight text-teal-400">
           {pastEvents.date}
         </p>
         <h3 className="mt-5 font-display text-2xl text-white">{pastEvents.name}</h3>
@@ -56,7 +54,7 @@ function PastEvents({
         target='_blank'
         variant={'outline'}
         color="slate"
-        className="mt-8 no-underline bg-amber-100 font-semibold"
+        className="mt-8 no-underline bg-teal-100 font-semibold"
       >
         Read More
       </Button>
@@ -73,7 +71,7 @@ function UpcomingEvents({
     <div
       className='flex flex-col rounded-3xl px-6 py-8 sm:px-8 border-2 border-amber-100 lg:py-8'
     >
-      <div className='lg:h-[220px]'>
+      <div className='lg:h-[16rem]'>
         <p className="font-display text-lg font-bold tracking-tight text-amber-300">
           {upcomingEvents.date}
         </p>
@@ -83,12 +81,7 @@ function UpcomingEvents({
         </p>
       </div>
 
-      <ul
-        role="list"
-        className=
-        'order-last flex flex-col gap-y-3'
-      >
-
+      <ul role="list" className='order-last flex flex-col gap-y-3' >
         {upcomingEvents.description && (
           <li className="flex">
             <Collapse content={upcomingEvents.description} />
@@ -121,27 +114,45 @@ export default async function Events() {
             <span className="">Events</span>
           </h2>
           <p className="mt-8 text-lg text-slate-300">
-            Our event page is your central resource for past and upcoming events dedicated to exploring and preserving the stories of Asian Americans in Ohio. This page serves as a platform to engage communities, scholars, and enthusiasts in meaningful discussions, conferences, and workshops centered on this vital project. Here, you’ll find information about events designed to share knowledge, foster connections, and inspire action, all while deepening awareness of Asian American contributions and histories. Stay informed and involved as we work together to illuminate the rich and diverse heritage of Asian American communities in Ohio.
-          </p>
+            Our event section is your central resource for past and upcoming events dedicated to exploring and preserving the stories of Asian Americans in Ohio.
+            This page serves as a platform to engage communities, scholars, and enthusiasts in meaningful discussions, conferences, and workshops centered on this vital project.
+            Here, you’ll find information about events designed to share knowledge, foster connections, and inspire action, all while deepening awareness of Asian American contributions and histories.
+            Stay informed and involved as we work together to illuminate the rich and diverse heritage of Asian American communities in Ohio.</p>
         </div>
 
-        <>
-          <h3>Upcoming Events</h3>
-          <div className="mt-16 grid max-w-2xl grid-cols-1 gap-y-10 gap-x-8 sm:mx-auto lg:max-w-none lg:grid-cols-2 xl:mx-20 xl:gap-x-16">
-            {UPCOMING_EVENTS.map((event, index) => (
-              <UpcomingEvents key={index} upcomingEvents={event} />
-            ))}
-          </div>
-        </>
-
-        <>
-          <h3>Past Events</h3>
-          <div className="mt-16 grid max-w-2xl grid-cols-1 gap-y-10 gap-x-8 sm:mx-auto lg:max-w-none lg:grid-cols-2 xl:mx-20 xl:gap-x-16">
-            {PAST_EVENTS.map((event, index) => (
-              <PastEvents key={index} pastEvents={event} />
-            ))}
-          </div>
-        </>
+        <div className="mt-24 space-y-24">
+          {EVENT_LIST.map((group) => (
+            <FadeInStagger key={group.title}>
+              <Border as={FadeIn} invert={true} />
+              <div className="grid grid-cols-1 gap-6 pt-12 sm:pt-16 lg:grid-cols-4 xl:gap-8">
+                <FadeIn>
+                    <h3 className="font-display text-2xl font-semibold text-neutral-100">
+                      {group.title}
+                    </h3>
+                </FadeIn>
+                <div className="lg:col-span-3">
+                  <ul
+                    role="list"
+                    className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-2 xl:gap-8"
+                  >
+                    {group.events.map((event) => (
+                      <li key={event.name}>
+                        <FadeIn>
+                          {event.group === 'upcoming' ? (
+                            <UpcomingEvents upcomingEvents={event} />
+                          )
+                            : (
+                              <PastEvents pastEvents={event} />
+                            )}
+                        </FadeIn>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </FadeInStagger>
+          ))}
+        </div>
       </Container>
     </section>
   )
