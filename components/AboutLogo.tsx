@@ -16,6 +16,7 @@ export default function AboutLogo() {
               width={400}
               height={400}
               className="rounded-full shadow-xl"
+              priority
             />
           </div>
           <div className="lg:w-1/2">

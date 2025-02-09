@@ -14,7 +14,7 @@ export const NAV_LINKS = [
     },
     {
         name: "Events",
-        href: "/#upcoming-events",
+        href: "/#events",
     },
     {
         name: "About Us",

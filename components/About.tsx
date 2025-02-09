@@ -5,6 +5,7 @@ import { FadeIn, FadeInStagger } from '@/components/customUI/FadeIn'
 import { PROJECT_TEAM, COLLABORATORS } from "@/constant/Personnel"
 import PersonCard from '@/components/customUI/PersonCard'
 import AboutLogo from './AboutLogo'
+import SwirlyDoodle from './customUI/SwirlyDoodle'
 
 
 const team = [
@@ -28,10 +29,14 @@ export function About() {
 
       <Container >
         <div className="mx-auto max-w-2xl md:text-center">
-          <h2 className="text-slate-900">
-            About Us
+          <h2>
+            <span className="relative whitespace-nowrap">
+              <SwirlyDoodle className="absolute left-0 top-2/3 h-[0.8em] w-full fill-red-400/80" />
+              <span className="relative">About Us</span>
+            </span>
           </h2>
-          <p className="my-4 text-lg tracking-tight text-slate-700">
+
+          <p className="my-8 text-lg tracking-tight text-slate-700">
             Meet our fantastic team.
           </p>
         </div>

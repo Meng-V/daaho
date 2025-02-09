@@ -50,7 +50,7 @@ function PastEvents({
         )}
       </ul>
       <Button
-        href={pastEvents.href}
+        href= {`/past/${pastEvents.name}`}
         target='_blank'
         variant={'outline'}
         color="slate"
@@ -105,7 +105,7 @@ export default async function Events() {
 
   return (
     <section
-      id="upcoming-events"
+      id="events"
       className="bg-radial-[at_25%_25%] from-gray-900 to-sky-900 py-24"
     >
       <Container>
@@ -126,9 +126,9 @@ export default async function Events() {
               <Border as={FadeIn} invert={true} />
               <div className="grid grid-cols-1 gap-6 pt-12 sm:pt-16 lg:grid-cols-4 xl:gap-8">
                 <FadeIn>
-                    <h3 className="font-display text-2xl font-semibold text-neutral-100">
-                      {group.title}
-                    </h3>
+                  <h3 className="font-display text-2xl font-semibold text-neutral-100">
+                    {group.title}
+                  </h3>
                 </FadeIn>
                 <div className="lg:col-span-3">
                   <ul
