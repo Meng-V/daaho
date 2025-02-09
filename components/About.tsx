@@ -2,8 +2,9 @@ import Image from 'next/image'
 import { Container } from '@/components/customUI/Container'
 import { Border } from '@/components/customUI/Border'
 import { FadeIn, FadeInStagger } from '@/components/customUI/FadeIn'
-import { PROJECT_TEAM, COLLABORATORS } from "@/constant/StaticInfo"
+import { PROJECT_TEAM, COLLABORATORS } from "@/constant/PERSONNEL"
 import PersonCard from '@/components/customUI/PersonCard'
+import AboutLogo from './AboutLogo'
 
 
 const team = [
@@ -19,7 +20,6 @@ const team = [
 
 export function About() {
   return (
-
     <section
       id="about-us"
       aria-label="About the team and project"
@@ -27,13 +27,12 @@ export function About() {
     >
 
       <Container >
-
         <div className="mx-auto max-w-2xl md:text-center">
-          <h2 className="font-display text-3xl text-slate-900 sm:text-4xl">
+          <h2 className="text-slate-900">
             About Us
           </h2>
-          <p className="mt-4 text-lg tracking-tight text-slate-700">
-
+          <p className="my-4 text-lg tracking-tight text-slate-700">
+            Meet our fantastic team.
           </p>
         </div>
 
@@ -71,8 +70,14 @@ export function About() {
               </div>
             </FadeInStagger>
           ))}
+          <FadeInStagger>
+            <Border as={FadeIn} />
+            <FadeIn>
+              <AboutLogo />
+            </FadeIn>
+          </FadeInStagger>
         </div>
       </Container>
-    </section>
+    </section >
   )
 }

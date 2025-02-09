@@ -1,18 +1,6 @@
-import ChineseStdents from "../images/hero/ChineseStudents.jpg";
 import Landscape from "../images/hero/Landscape.jpg";
 import PublicLaunch from "../images/hero/PublicLaunch.jpg";
 import JapaneseAmerican from "../images/hero/JapaneseAmerican.jpg";
-
-import ChangSarah from "../images/team/ChangSarah.jpg";
-import ChenYong from "../images/team/ChenYong.jpg";
-import CongHao from "../images/team/CongHao.jpg";
-import DavisAnnMarie from "../images/team/DavisAnnMarie.jpg";
-import GibsonKatie from "../images/team/GibsonKatie.jpg";
-import HiltBill from "../images/team/HiltBill.jpg";
-import LiHongmei from "../images/team/LiHongmei.jpg";
-import WegnerAlia from "../images/team/WegnerAlia.jpg";
-import LOGO from "../images/logos/logo_n.png";
-import AvatarLogo from "../images/avatars/modified.svg";
 
 export const NAV_LINKS = [
     {
@@ -60,68 +48,24 @@ export const CAROUSEL = [
     },
 ];
 
-export const PROJECT_TEAM = [
+
+export const UPCOMING_EVENTS = [
     {
-        name: "Dr. Hongmei Li",
-        title: "Project Director and Principal Investigator",
-        imageTitle: LiHongmei,
-        description: "Dr. Li is an associate professor and area coordinator of Strategic Communication at Miami University of Ohio with research expertise in media, cultural and communication studies, Chinese society, U.S.-China relations, and Chinese American community and diaspora."
+        name: "Documenting Asian American History in Ohio: Make the Invisible Visible",
+        date: "Spring 2025, Date TBA",
+        location: "Walter Havighurst Special Collections and University Archives, Miami University",
+        href: "https://www.lib.miamioh.edu/",
+        description: 'Funded by National Historical Publications & Records Commission, the DAAHO project aims to document and digitize Asian American histories in Ohio since the 19th century. The interdisciplinary research team consists of scholars, librarians and archivists at Miami University, OSU, University of California Irvine and other places, and aims to systematically collect dispersed materials and turn them into a coherent database that allows students, educators, scholars, and community members to access the rich and diverse histories and contributions of Asians in the nation’s heartland. Come to learn more about this significant project and see how you can be part of it.'
     },
     {
-        name: "Dr. Yong Chen",
-        title: "Co-Principal Investigator",
-        imageTitle: ChenYong,
-        description: "Dr. Chen is a professor of history and Asian American Studies at the University of California, Irvine, where he serves as Associate Dean for graduate and undergraduate education in the School of Humanities."
-    },
-    {
-        name: "Dr. Ann Marie Davis",
-        title: "Co-Principal Investigator",
-        imageTitle: DavisAnnMarie,
-        description: "Dr. Davis is an associate professor and Japanese Studies librarian at The Ohio State University Libraries. As a curator of general and special collections in Area Studies, she is passionate about documenting Japanese and Japanese American diasporic history in Ohio and beyond."
-    },
-    {
-        name: "Alia Levar Wegner",
-        title: "Co-Principal Investigator",
-        imageTitle: WegnerAlia,
-        description: "Alia is the Digital Collections Librarian at the Walter Havighurst Special Collections and University Archives at Miami University where she is responsible for coordinating the digitization of special collections materials, developing digital collections, and consulting on digital humanities projects.",
-    },
+        name: "A Roundtable Discussion – Making the Invisible Visible: Documenting Asian Histories in Ohio through a Collaborative Digital Edition",
+        date: "March 13-16, 2025",
+        location: "Columbus, Ohio, Greater Columbus Convention Center",
+        href: "https://www.asianstudies.org/conference/",
+        description: "The Association of Asian Studies Conference offers a unique opportunity to engage with Asian Studies and explore the latest research and ideas in the field. DAAHO project members will present on the current status of the project and future plans in an engaging roundtable discussion. Moderated by Dr. Pranav Jani (The Ohio State University), our roundtable will discuss the project’s recent launch, focusing on current engagement and research with community organizations. Dr. Li will discuss the aims and significance of the DAAHO as well as preliminary findings. Co-PI Dr. Yong Chen will discuss research on Asian food culture as an important part of both Asian American community formation and identity expression. Co PIs Alia Levar Wegner and Dr. Ann Marie Davis will share information about relevant archival collections as well as technical aspects in developing a collaborative digital edition. Community leader and public historian James Tecco will discuss his use of oral history and storytelling with Asian & Pacific Islander communities in the Cincinnati region. Making visible what was previously invisible in American history, our project will offer new insights on Asian border crossings in Ohio while inspiring new models for preserving and promoting marginalized histories of all minority populations."
+    }
 ]
 
-export const COLLABORATORS = [
-    {
-        name: "Dr. Sarah Chang",
-        title: "Assistant Professor of History",
-        imageTitle: ChangSarah,
-        description: "Dr. Chang is an assistant professor of history at Miami University, whose research interests include Chinese history, East Asian history, History of socialism and China’s economic reforms, and gender and women’s history.",
-    },
-    {
-        name: "Hao Cong",
-        title: "Cincinnati Chapter President of AACO",
-        imageTitle: CongHao,
-        description: "Hao is the Cincinnati chapter president of the Asian American Coalition Ohio. She has been recognized by the Hamilton County Board of Commissioners for her outstanding contributions to the API community.",
-    },
-    {
-        name: "Katie Gibson",
-        title: "Humanities Librarian",
-        imageTitle: GibsonKatie,
-        description: "Katie is the Miami University Libraries liaison to the Asian and Asian American Studies program and is the Libraries’ liaison for accessibility.",
-    },
-    {
-        name: "William (Bill) Hilt",
-        title: "President of the Ohio Council for the Social Studies",
-        imageTitle: HiltBill,
-        description: "Bill has been teaching social studies in Perrysburg, Ohio for thirty years. He is currently the President of the Ohio Council for the Social Studies, and is the founder, President and CEO of the World Affairs Council of NW Ohio.",
-    },
-    {
-        name: "Dr. Hou-mei Sung",
-        title: "Curator of East Asian Art, Prints, and Drawings",
-        imageTitle: AvatarLogo,
-        description: "Dr. Sung is the Curator of East Asian Art, Prints, and Drawings at the Cincinnati Art Museum. She has made tremendous contributions to Asian art in Cincinnati and has worked on important collections and exhibitions emphasizing the importance of art education in breaking down cultural and language barriers."
-    },
-    {
-        name: "James Tecco",
-        title: "C-Founder of APIA History Cincinnati",
-        imageTitle: AvatarLogo,
-        description: "James is a community leader who is passionate about promoting DEI and is the curator and creator of the “52 Voices” project, based in Cincinnati, which is dedicated to archiving, documenting, and collecting the history and contemporary experiences of AAPI communities in the Greater Cincinnati region through oral history and storytelling.",
-    },
+export const PAST_EVENTS = [
+
 ]

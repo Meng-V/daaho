@@ -113,7 +113,7 @@ function ContactDetails() {
 export default function Contact() {
   return (
     <section className='mb-24'>
-      <PageIntro eyebrow="Get involved" title="Let’s work together">
+      <PageIntro eyebrow="Get Involved" title="Let’s work together">
         <p>Discover ways to support this project through volunteering, attending events, sharing your own stories or artifacts, or collaborating on research initiatives. Your involvement is key to ensuring these important histories are documented, celebrated, and passed down to future generations. Join us in making an impact!
         </p>
       </PageIntro>
