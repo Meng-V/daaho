@@ -1,11 +1,12 @@
 import { Button } from '@/components/customUI/Button'
 import { Container } from '@/components/customUI/Container'
-import Collapse from './customUI/Collapse'
 import { FadeIn, FadeInStagger } from './customUI/FadeIn'
 import { EventsProps } from '@/types/index'
 import { UPCOMING_EVENTS } from '@/constant/StaticInfo'
 import { PAST_EVENTS } from '@/constant/StaticInfo'
 import { Border } from './customUI/Border'
+import { PastEvents } from './PastEvents'
+import Collapse from './customUI/Collapse'
 
 const EVENT_LIST = [
   {
@@ -17,50 +18,6 @@ const EVENT_LIST = [
     events: PAST_EVENTS
   },
 ]
-
-function PastEvents({
-  pastEvents
-}: {
-  pastEvents: EventsProps
-}) {
-  return (
-    <div
-      className='flex flex-col rounded-3xl px-6 py-8 sm:px-8 border-2 border-teal-500 lg:py-8'
-    >
-      <div className=''>
-        <p className="font-display text-lg font-bold tracking-tight text-teal-400">
-          {pastEvents.date}
-        </p>
-        <h3 className="mt-5 font-display text-2xl text-white">{pastEvents.name}</h3>
-        <p className='mt-4 text-base text-slate-400'>
-          {pastEvents.location}
-        </p>
-      </div>
-
-      <ul
-        role="list"
-        className=
-        'order-last flex flex-col gap-y-3'
-      >
-
-        {pastEvents.description && (
-          <li className="flex">
-            <Collapse content={pastEvents.description} />
-          </li>
-        )}
-      </ul>
-      <Button
-        href= {`/past/${pastEvents.name}`}
-        target='_blank'
-        variant={'outline'}
-        color="slate"
-        className="mt-8 no-underline bg-teal-100 font-semibold"
-      >
-        Read More
-      </Button>
-    </div>
-  )
-}
 
 function UpcomingEvents({
   upcomingEvents

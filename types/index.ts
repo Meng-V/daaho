@@ -15,6 +15,7 @@ export interface MenuProps {
 }
 
 export interface EventsProps {
+  group: string
   name: string
   date: string
   location: string
