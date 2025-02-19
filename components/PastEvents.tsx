@@ -15,9 +15,9 @@ export function PastEvents({
   const [isModalOpen, setIsModalOpen] = useState(false)
 
   return (
-    <div className='flex flex-col rounded-3xl px-6 py-8 sm:px-8 border-2 border-teal-500 lg:py-8'>
+    <div className='flex flex-col rounded-3xl px-6 py-8 sm:px-8 border-2 border-teal-700 lg:py-8'>
       <div className=''>
-        <p className="font-display text-lg font-bold tracking-tight text-teal-400">
+        <p className="font-display text-lg font-bold tracking-tight text-teal-600">
           {pastEvents.date}
         </p>
         <h3 className="mt-5 font-display text-2xl text-white">{pastEvents.name}</h3>

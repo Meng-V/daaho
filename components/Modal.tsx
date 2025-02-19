@@ -45,7 +45,7 @@ export default function Modal(
                                         <Image src={pastEvent.imageURL} alt={pastEvent.name} width={600} height={500} />
                                     </div>
                                 }
-                                <p className="text-gray-600 mt-8 text-start">
+                                <p className="text-gray-600 mt-8 text-start sm:mx-8">
                                     {pastEvent.description}
                                 </p>
                             </div>

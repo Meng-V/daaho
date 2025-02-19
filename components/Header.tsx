@@ -28,7 +28,7 @@ function NavLink({
   return (
     <Link
       href={href}
-      className="inline-block rounded-lg px-2 py-1 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900"
+      className="inline-block rounded-lg px-2 py-1 text-sm text-slate-800 hover:bg-orange-200 hover:text-slate-600 hover:font-semibold"
     >
       {children}
     </Link>
@@ -44,7 +44,7 @@ function MobileNavLink({
   children: React.ReactNode
 }) {
   return (
-    <PopoverButton as={Link} href={href} className="block w-full p-2">
+    <PopoverButton as={Link} href={href} className="block w-full p-2 text-sm">
       {children}
     </PopoverButton>
   )

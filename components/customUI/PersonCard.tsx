@@ -34,7 +34,7 @@ export default function PersonCard({ name, title, description, imageUrl }: Perso
             <div className={`relative z-20 h-full flex flex-col justify-end p-4 transition-all duration-300 ease-in-out ${isHovered ? 'bg-black/75' : 'bg-transparent'}`}>
                 {/* Description (hidden by default) */}
                 <div
-                    className={`text-white transition-all duration-300 ease-in-out ${isHovered ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-full'
+                    className={`text-white transition-all duration-300 ease-in-out ${isHovered ? 'opacity-100 transform translate-y-12' : 'opacity-0 transform translate-y-full'
                         }`}
                 >
                     <p className="text-sm">{description}</p>
@@ -42,7 +42,7 @@ export default function PersonCard({ name, title, description, imageUrl }: Perso
 
                 {/* Name and Title */}
                 <div
-                    className={`bg-black/30 rounded-3xl p-3 transition-all duration-300 ease-in-out ${isHovered ? 'bg-transparent transform translate-y-10' : ''
+                    className={`bg-black/30 rounded-3xl p-3 transition-all duration-300 ease-in-out ${isHovered ? 'bg-transparent transform translate-y-[100%]' : ''
                         }`}
                 >
                     <h4 className="text-white text-2xl font-bold">{name}</h4>
