@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { Container } from '@/components/customUI/Container'
 import { Border } from '@/components/customUI/Border'
 import { FadeIn, FadeInStagger } from '@/components/customUI/FadeIn'
-import { PROJECT_TEAM, COLLABORATORS } from "@/constant/Personnel"
+import { PROJECT_TEAM, PARTNERS, COMMITTEE } from "@/constant/Personnel"
 import PersonCard from '@/components/customUI/PersonCard'
 import AboutLogo from './AboutLogo'
 import SwirlyDoodle from './customUI/SwirlyDoodle'
@@ -10,12 +10,16 @@ import SwirlyDoodle from './customUI/SwirlyDoodle'
 
 const team = [
   {
-    title: 'Project Team',
+    title: "Project Team",
     people: PROJECT_TEAM
   },
   {
     title: 'Partners',
-    people: COLLABORATORS
+    people: PARTNERS
+  },
+  {
+    title: 'Archives and Content Committee',
+    people: COMMITTEE
   },
 ]
 
@@ -63,7 +67,7 @@ export function About() {
                             <PersonCard
                               name={person.name}
                               title={person.title}
-                              description={person.description}
+                              description={person.biography}
                               imageUrl={person.imageTitle.src}
                             />
                           </div>
