@@ -125,7 +125,7 @@ export function Header() {
           <div className="flex items-center gap-x-5 md:gap-x-8">
             <div className="hidden md:block">
             </div>
-            <Button variant="outline" color="red" href="/">Submit<span className='hidden lg:inline'>&nbsp;a collection</span></Button>
+            <Button variant="outline" color="red" href="https://forms.gle/XEajS5MZzZ6AHuyv5" target="_blank">Submit<span className='hidden lg:inline'>&nbsp;a collection</span></Button>
             <Button href="/contact" color="red">
               <span>
                 Contact<span className="hidden lg:inline">&nbsp;us</span>
