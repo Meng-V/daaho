@@ -1,5 +1,5 @@
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
-import { MinusIcon, PlusIcon } from '@heroicons/react/24/outline'
+import { Minus, Plus } from 'lucide-react'
 
 export default function Collapse({ content }: { content: string }) {
     return (
@@ -12,8 +12,8 @@ export default function Collapse({ content }: { content: string }) {
                                 <DisclosureButton className="group flex w-full items-start justify-between text-left text-slate-300">
                                     <span className="text-base/7 font-semibold">Read more about this event</span>
                                     <span className="ml-6 flex h-7 items-center">
-                                        <PlusIcon aria-hidden="true" className="size-6 group-data-[open]:hidden" />
-                                        <MinusIcon aria-hidden="true" className="size-6 group-[&:not([data-open])]:hidden" />
+                                        <Plus aria-hidden="true" className="size-6 group-data-[open]:hidden" />
+                                        <Minus aria-hidden="true" className="size-6 group-[&:not([data-open])]:hidden" />
                                     </span>
                                 </DisclosureButton>
                             </dt>

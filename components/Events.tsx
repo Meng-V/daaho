@@ -6,7 +6,7 @@ import { UPCOMING_EVENTS } from '@/constant/StaticInfo'
 import { PAST_EVENTS } from '@/constant/StaticInfo'
 import { Border } from './customUI/Border'
 import { PastEvents } from './PastEvents'
-import Collapse from './customUI/Collapse'
+ 
 
 const EVENT_LIST = [
   {
@@ -39,15 +39,10 @@ function UpcomingEvents({
       </div>
 
       <ul role="list" className='order-last flex flex-col gap-y-3' >
-        {upcomingEvents.description && (
-          <li className="flex">
-            <Collapse content={upcomingEvents.description} />
-          </li>
-        )}
+        
       </ul>
       <Button
-        href={upcomingEvents.href}
-        target='_blank'
+        href={`/news#${upcomingEvents.slug}`}
         variant={'outline'}
         color="slate"
         className="mt-8 no-underline bg-amber-100 font-semibold"

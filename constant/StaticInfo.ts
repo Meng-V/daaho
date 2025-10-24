@@ -52,29 +52,33 @@ export const CAROUSEL = [
 export const UPCOMING_EVENTS = [
     {
         group: "upcoming",
-        name: "Documenting Asian American History in Ohio: Make the Invisible Visible",
-        date: "Spring 2025, Date TBA",
-        location: "Walter Havighurst Special Collections and University Archives, Miami University",
-        href: "https://www.lib.miamioh.edu/",
-        description: 'Funded by National Historical Publications & Records Commission, the DAAHO project aims to document and digitize Asian American histories in Ohio since the 19th century. The interdisciplinary research team consists of scholars, librarians and archivists at Miami University, OSU, University of California Irvine and other places, and aims to systematically collect dispersed materials and turn them into a coherent database that allows students, educators, scholars, and community members to access the rich and diverse histories and contributions of Asians in the nation’s heartland. Come to learn more about this significant project and see how you can be part of it.'
+        name: "Sharing Our Stories & Histories as Asian Americans in Ohio",
+        date: "Oct 25, 2025, 10 AM - 12 PM",
+        location: "Mason Public Library, 200 Reading Road, Mason, OH 45040",
+        href: "/",
+        slug: "sharing-stories-2025-exhibit",
+        description: 'Connect with members of the local Asian American community, engage in meaningful dialogue about shared experiences, and view the Asian American Experience at Miami University pop-up exhibit.'
     },
-    {
-        group: "upcoming",
+
+]
+
+export const PAST_EVENTS = [
+        {
+        group: "past",
         name: "A Roundtable Discussion – Making the Invisible Visible: Documenting Asian Histories in Ohio through a Collaborative Digital Edition",
         date: "March 13-16, 2025",
         location: "Columbus, Ohio, Greater Columbus Convention Center",
         href: "https://www.asianstudies.org/conference/",
+        slug: "roundtable-march-2025",
         description: "The Association of Asian Studies Conference offers a unique opportunity to engage with Asian Studies and explore the latest research and ideas in the field. DAAHO project members will present on the current status of the project and future plans in an engaging roundtable discussion. Moderated by Dr. Pranav Jani (The Ohio State University), our roundtable will discuss the project’s recent launch, focusing on current engagement and research with community organizations. Dr. Li will discuss the aims and significance of the DAAHO as well as preliminary findings. Co-PI Dr. Yong Chen will discuss research on Asian food culture as an important part of both Asian American community formation and identity expression. Co PIs Alia Levar Wegner and Dr. Ann Marie Davis will share information about relevant archival collections as well as technical aspects in developing a collaborative digital edition. Community leader and public historian James Tecco will discuss his use of oral history and storytelling with Asian & Pacific Islander communities in the Cincinnati region. Making visible what was previously invisible in American history, our project will offer new insights on Asian border crossings in Ohio while inspiring new models for preserving and promoting marginalized histories of all minority populations."
-    }
-]
-
-export const PAST_EVENTS = [
+    },
     {
         group: "past",
         name: "DAAHO Project Launch",
         date: "July 20, 2024",
         location: "Mason City Hall in Mason, Ohio",
         href: "/",
+        slug: "daaho-project-launch-2024",
         description: "On July 20, the Asian American History Project: Making the Invisible Visible was officially launched at Mason City Hall in Mason, Ohio. Supported by the National Historical Publications & Records Commission (NHPRC), this initiative seeks to preserve and amplify the underrepresented stories of Asian American communities in Ohio. The event brought together historians, community leaders, educators, and advocates to celebrate this significant milestone. The launch featured presentations that outlined the project’s goals, including documenting oral histories, digitizing historical records, and engaging the public in conversations about the rich and diverse contributions of Asian Americans. Attendees had the opportunity to connect, share personal stories, and discuss ways to collaborate on this important work. The event underscored the collective effort required to ensure these histories are accessible for future generations.",
         imageURL: PublicLaunch,
         imageAlt: "A group of around 30 members stands together in a conference room, smiling for a photo during the launch of the \"Asian American History Project: Making the Invisible Visible.\" Behind them, a presentation slide displays the project's title, the National Archives logo, and event details: \"Project Launch, July 20, Mason City Hall, Mason, Ohio, Funded by NHPRC.\"",
