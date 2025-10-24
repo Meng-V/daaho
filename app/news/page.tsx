@@ -2,9 +2,9 @@ import { Button } from "@/components/ui/Button"
 import { Badge } from "@/components/ui/badge"
 import Image from "next/image"
 import { MapPin, Calendar, ExternalLink, Users } from "lucide-react"
-import PublicLaunch from "@/images/hero/PublicLaunch.jpg"
-import AsianAmerican from "@/images/news/Asian American Experience at Miami University Exhibition Flyer (3) (1)[18].jpg"
-import EventFlyer from "@/images/news/Sharing Our Stories & Histories Event Flier (1).png"
+import PublicLaunch from "@/images/news/PublicLaunch.jpg"
+import AsianAmerican from "@/images/news/ExhibitionFlyer2025.jpg"
+import EventFlyer from "@/images/news/EventFlier2025.png"
 
 // Event data structure duplicated from daaho-news with minor adjustments
 const events = [

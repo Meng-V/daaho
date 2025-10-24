@@ -1,6 +1,6 @@
-import Landscape from "../images/hero/Landscape.jpg";
-import PublicLaunch from "../images/hero/PublicLaunch.jpg";
-import JapaneseAmerican from "../images/hero/JapaneseAmerican.jpg";
+import Landscape from "@/images/hero/Landscape.jpg"
+import PublicLaunch from "@/images/news/PublicLaunch.jpg";
+import JapaneseAmerican from "@/images/hero/JapaneseAmerican.jpg";
 
 export const NAV_LINKS = [
     {
@@ -80,7 +80,5 @@ export const PAST_EVENTS = [
         href: "/",
         slug: "daaho-project-launch-2024",
         description: "On July 20, the Asian American History Project: Making the Invisible Visible was officially launched at Mason City Hall in Mason, Ohio. Supported by the National Historical Publications & Records Commission (NHPRC), this initiative seeks to preserve and amplify the underrepresented stories of Asian American communities in Ohio. The event brought together historians, community leaders, educators, and advocates to celebrate this significant milestone. The launch featured presentations that outlined the project’s goals, including documenting oral histories, digitizing historical records, and engaging the public in conversations about the rich and diverse contributions of Asian Americans. Attendees had the opportunity to connect, share personal stories, and discuss ways to collaborate on this important work. The event underscored the collective effort required to ensure these histories are accessible for future generations.",
-        imageURL: PublicLaunch,
-        imageAlt: "A group of around 30 members stands together in a conference room, smiling for a photo during the launch of the \"Asian American History Project: Making the Invisible Visible.\" Behind them, a presentation slide displays the project's title, the National Archives logo, and event details: \"Project Launch, July 20, Mason City Hall, Mason, Ohio, Funded by NHPRC.\"",
     },
 ]
