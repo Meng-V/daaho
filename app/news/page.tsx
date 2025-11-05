@@ -207,7 +207,7 @@ export default function NewsPage() {
                   <div className="mb-8 p-6 bg-accent rounded-lg border-l-4 border-primary">
                     <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
                       <Calendar className="size-5 text-primary" />
-                      Community Event <span> <Badge className="bg-green-600 text-white mb-1">Upcoming</Badge></span>
+                      Community Event
                     </h3>
                     <p className="text-foreground mb-3 leading-relaxed">
                       {event.communityEvent.description}

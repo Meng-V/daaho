@@ -50,8 +50,13 @@ export const CAROUSEL = [
 
 
 export const UPCOMING_EVENTS = [
-    {
-        group: "upcoming",
+
+
+]
+
+export const PAST_EVENTS = [
+        {
+        group: "past",
         name: "Sharing Our Stories & Histories as Asian Americans in Ohio",
         date: "Oct 25, 2025, 10 AM - 12 PM",
         location: "Mason Public Library, 200 Reading Road, Mason, OH 45040",
@@ -59,10 +64,6 @@ export const UPCOMING_EVENTS = [
         slug: "sharing-stories-2025-exhibit",
         description: 'Connect with members of the local Asian American community, engage in meaningful dialogue about shared experiences, and view the Asian American Experience at Miami University pop-up exhibit.'
     },
-
-]
-
-export const PAST_EVENTS = [
         {
         group: "past",
         name: "A Roundtable Discussion – Making the Invisible Visible: Documenting Asian Histories in Ohio through a Collaborative Digital Edition",

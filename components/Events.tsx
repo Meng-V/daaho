@@ -73,7 +73,7 @@ export default async function Events() {
         </div>
 
         <div className="mt-24 space-y-24">
-          {EVENT_LIST.map((group) => (
+          {EVENT_LIST.filter((group) => group.events.length > 0).map((group) => (
             <FadeInStagger key={group.title}>
               <Border as={FadeIn} invert={true} />
               <div className="grid grid-cols-1 gap-6 pt-12 sm:pt-16 lg:grid-cols-4 xl:gap-8">
