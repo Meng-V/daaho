@@ -1,4 +1,7 @@
+import AbasEmily from "../images/team/AbasEmily.jpg";
+import BackJaewon from "../images/team/BackJaewon.jpg";
 import ChangSarah from "../images/team/ChangSarah.jpg";
+import ChanLeo from "../images/team/ChanLeo.jpg";
 import ChenYong from "../images/team/ChenYong.jpg";
 import CongHao from "../images/team/CongHao.jpg";
 import DavisAnnMarie from "../images/team/DavisAnnMarie.jpg";
@@ -6,11 +9,7 @@ import GibsonKatie from "../images/team/GibsonKatie.jpg";
 import HiltBill from "../images/team/HiltBill.jpg";
 import LiHongmei from "../images/team/LiHongmei.jpg";
 import WegnerAlia from "../images/team/WegnerAlia.jpg";
-import AbasEmily from "../images/team/AbasEmily.jpg";
-import BackJaewon from "../images/team/BackJaewon.jpg";
 import Bandopadhyay from "../images/team/Bandopadhyay.jpg";
-import ChanLeo from "../images/team/ChanLeo.jpg";
-import WuJohnny from "../images/team/WuJohnny.jpg";
 import DahlquistMark from "../images/team/DahlquistMark.jpg";
 import HughettEric from "../images/team/HughettEric.jpg";
 import JaniPranav from "../images/team/JaniPranav.jpg";
@@ -24,9 +23,13 @@ import GreenJohn from "../images/team/GreenJack.jpg";
 import HayashiDon from "../images/team/HayashiDon.jpg";
 import JohnsonJacqueline from "../images/team/JohnsonJacqueline.jpg";
 import LeeMaria from "../images/team/LeeMaria.jpg";
+import WuJohnny from "../images/team/WuJohnny.jpg";
 import SatoKazuya from "../images/team/SatoKazuya.jpg";
 import SpangleCarver from "../images/team/SpangleCarver.jpg";
 import WigginsLeticia from "../images/team/WigginsLeticia.jpg";
+import QuMeng from "../images/team/QuMeng.jpg";
+import SnellerLucas from "../images/team/SnellerLucas.jpg";
+import FarrellGrace from "../images/team/FarrellGrace.jpg";
 
 export const PROJECT_TEAM = [
     {
@@ -57,34 +60,10 @@ export const PROJECT_TEAM = [
 
 export const PARTNERS = [
     {
-        name: "Emily Abas",
-        title: "DAAHO Student Research Assistant",
-        imageTitle: AbasEmily,
-        biography: "Emily is a senior at Miami University double majoring in Media and Communications as well as East Asian Languages and Cultures. She also works as an International Peer Orientation Leader as well as staff for the Global Initiatives front desk.",
-    },
-    {
-        name: "Jaewon Back",
-        title: "DAAHO Graduate Student Research Assistant",
-        imageTitle: BackJaewon,
-        biography: "Jaewon is a Ph.D. student in the English Department at Miami University and holds an M.A. from Hankuk University of Foreign Studies.",
-    },
-    {
-        name: "Sharbaditya Bandopadhyay",
-        title: "DAAHO Graduate Student Research Assistant",
-        imageTitle: Bandopadhyay,
-        biography: "Sharbaditya is pursuing an M.A. in English at Miami University with a minor in Women, Gender, and Sexuality Studies.",
-    },
-    {
         name: "Dr. Sarah Chang",
         title: "Assistant Professor of History",
         imageTitle: ChangSarah,
         biography: "Dr. Chang is an assistant professor of history at Miami University, whose research interests include Chinese history, East Asian history, History of socialism and China's economic reforms, and gender and women's history.",
-    },
-    {
-        name: "Leo Chan",
-        title: "Asia Chamber of America Executive Director",
-        imageTitle: ChanLeo,
-        biography: "Leo is the Executive Director of the Asia Chamber of America, an organization dedicated to promoting business, trade, and cultural connections between the U.S. and Asian countries. He is also a seasoned finance and technology professional, with experience working with Fortune 500 companies in Asia, Europe, and North America.",
     },
     {
         name: "Hao Cong",
@@ -152,6 +131,18 @@ export const PARTNERS = [
         imageTitle: WuJohnny,
         biography: "Mr. Johnny K. Wu is an award-winning producer, director, and editor with over 25 years of experience in film, media, and event production. He is a pioneer in Cleveland's independent filmmaking community, co-founded the Cleveland Asian Festival, and has produced numerous award-winning films, including Bullets, Brothers, and Blood and History of Cleveland's Chinatown.",
     },
+    {
+        name: "Meng Qu",
+        title: "Web Services Librarian",
+        imageTitle: QuMeng,
+        biography:"Meng Qu leads the technical strategy and implementation for DAAHO, translating archival goals into scalable digital workflows and tools. She drives the project’s modernization work—aligning metadata practices with automation, supporting cross-team collaboration, and guiding student contributions to move DAAHO from concept to usable infrastructure.",
+    },
+    {
+        name:"Lucas Sneller",
+        title:"DAAHO Student Research Assistant",
+        imageTitle: SnellerLucas,
+        biography: "Lucas Sneller is a senior at Miami University studying Political Science, Philosophy, and Economics, with research interests at the intersection of machine learning, AI, and mathematical economics. His work focuses on building computational and econometric pipelines to turn unstructured data into reproducible insights, with applications in mathematical finance, mean field games, and market microstructure."
+    }
 ]
 
 export const COMMITTEE = [
@@ -192,12 +183,6 @@ export const COMMITTEE = [
         biography: "Kaz Sato was born and raised in the city of Kofu. He attended International Christian University in Tokyo and after graduation came to the U.S. to continue with graduate school in Michigan. Kaz serves as the president of Cincinnati Chapter of Japanese American Citizens League and has been working to promote member's community relations and social issues surrounding Japanese American and other Asian Americans.",
     },
     {
-        name: "Carver Spangle",
-        title: "DAAHO Student Research Assistant",
-        imageTitle: SpangleCarver,
-        biography: "Carver is an honor student at Miami University majoring in History and Political Science, class of 2025. He works in the Walter Havighurst Special Collections and University Archives to research Asian American experiences at Miami University.",
-    },
-    {
         name: "James Tecco",
         title: "Co-Founder of APIA History Cincinnati",
         imageTitle: TeccoJames,
@@ -208,5 +193,38 @@ export const COMMITTEE = [
         title: "Ethnic Studies Librarian",
         imageTitle: WigginsLeticia,
         biography: "Dr. Wiggins serves as the liaison librarian to the Center for Ethnic Studies at The Ohio State University. Leticia establishes programmatic approaches to building partnerships within the Ohio State academic community and beyond. She earned her Ph.D. in U.S. History and Latin American History from Ohio State before embarking on a career that includes winning three Ohio Valley Emmy Awards for her film work.",
+    },
+    {
+        name: "Grace Farrell",
+        title: "DAAHO Student Research Assistant",
+        imageTitle: FarrellGrace,
+        biography: "Grace Farrell is a sophomore honors History and International Studies student at Miami University. Currently, she works in Walter Havighurst Special Collections documenting Asian-American experiences at Miami.",
     }
+]
+
+export const PREVIOUS_STUDENT_ASSISTANTS =[
+     {
+        name: "Emily Abas",
+        title: "DAAHO Student Research Assistant",
+        imageTitle: AbasEmily,
+        biography: "Emily is a senior at Miami University double majoring in Media and Communications as well as East Asian Languages and Cultures. She also works as an International Peer Orientation Leader as well as staff for the Global Initiatives front desk.",
+    },
+     {
+        name: "Jaewon Back",
+        title: "DAAHO Graduate Student Research Assistant",
+        imageTitle: BackJaewon,
+        biography: "Jaewon is a Ph.D. student in the English Department at Miami University and holds an M.A. from Hankuk University of Foreign Studies.",
+    },
+    {
+        name: "Sharbaditya Bandopadhyay",
+        title: "DAAHO Graduate Student Research Assistant",
+        imageTitle: Bandopadhyay,
+        biography: "Sharbaditya is pursuing an M.A. in English at Miami University with a minor in Women, Gender, and Sexuality Studies.",
+    },
+     {
+        name: "Carver Spangle",
+        title: "DAAHO Student Research Assistant",
+        imageTitle: SpangleCarver,
+        biography: "Carver is an honor student at Miami University majoring in History and Political Science, class of 2025. He works in the Walter Havighurst Special Collections and University Archives to research Asian American experiences at Miami University.",
+    },
 ]
