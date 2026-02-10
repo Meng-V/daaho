@@ -36,7 +36,7 @@ export const PROJECT_TEAM = [
         name: "Dr. Hongmei Li",
         title: "Project Director and Principal Investigator",
         imageTitle: LiHongmei,
-        biography: "Dr. Li is an associate professor and area coordinator of Strategic Communication at Miami University of Ohio with research expertise in media, cultural and communication studies, Chinese society, U.S.-China relations, and Chinese American community and diaspora."
+        biography: "Dr. Li is a professor and area coordinator of Strategic Communication at Miami University of Ohio with research expertise in media, cultural and communication studies, Chinese society, U.S.-China relations, and Chinese American community and diaspora."
     },
     {
         name: "Dr. Yong Chen",
