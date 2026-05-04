@@ -59,7 +59,7 @@ export const PROJECT_TEAM = [
     },
     {
         name: "Kevin Eagles",
-        title: "",
+        title: "Co-PI",
         imageTitle: EaglesKevin,
         biography: "Kevin is a visiting teaching professor of history and Director of Public History at Northern Kentucky University . He is also the Assistant Director of the Fort Thomas Military and Community Museum in Fort Thomas, Kentucky. Kevin’s research focus is on the Asian American diaspora and Vietnam."
     }
