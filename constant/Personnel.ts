@@ -30,6 +30,7 @@ import WigginsLeticia from "../images/team/WigginsLeticia.jpg";
 import QuMeng from "../images/team/QuMeng.jpg";
 import SnellerLucas from "../images/team/SnellerLucas.jpg";
 import FarrellGrace from "../images/team/FarrellGrace.jpg";
+import EaglesKevin from "../images/team/EaglesKevin.jpg";
 
 export const PROJECT_TEAM = [
     {
@@ -56,6 +57,12 @@ export const PROJECT_TEAM = [
         imageTitle: WegnerAlia,
         biography: "Alia is the Digital Collections Librarian at the Walter Havighurst Special Collections and University Archives at Miami University where she is responsible for coordinating the digitization of special collections materials, developing digital collections, and consulting on digital humanities projects.",
     },
+    {
+        name: "Kevin Eagles",
+        title: "",
+        imageTitle: EaglesKevin,
+        biography: "Kevin is a visiting teaching professor of history and Director of Public History at Northern Kentucky University . He is also the Assistant Director of the Fort Thomas Military and Community Museum in Fort Thomas, Kentucky. Kevin’s research focus is on the Asian American diaspora and Vietnam."
+    }
 ]
 
 export const PARTNERS = [
